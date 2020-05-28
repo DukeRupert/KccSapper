@@ -1,36 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
 body {
-	margin: 0;
-	font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-	font-size: 14px;
-	line-height: 1.5;
 	color: #333;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, 'EB Garamond', "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	margin: 0 0 0.5em 0;
-	font-weight: 400;
-	line-height: 1.2;
-}
-
-h1 {
-	font-size: 2em;
+:root {
+	--bg: var(--vert-de-terre);
+	--bg-accent: #484a4d;
+	--text-color: var(--french-black);
+	--text-size: 8px;
+	--nav-size: 60px;
+	--nav-text: 20px;
+	--nav-bg: white;
+	--menu-bg: var(--custard);
+	--button-bg: var(--french-black);
+	--menu-text: 24px;
+	--border: 1px solid #474a4d;
+	--border-radius: 8px;
+	--speed: 500ms;
+	
+	/* Theme Colors */
+	--tea-rose: #F8E1DB; 
+	--wisteria: #E2CFD3;
+	--custard: #F7ECBF;
+	--french-chateau: #D6D8CD;
+	--vert-de-terre: #A5A196;
+	--arrowroot: #F6E6CC;
+	--straw: #E7E5BE;
+	--alabaster: #EFEDE0;
+	--oyster: #D7D1C5;
+	--nutmeg: #ACA48F;
+	--antoinette: #EFD9DB;
+	--duck-egg: #CFD7CC;
+	--pear: #E5E7B6;
+	--parchment: #F7EEDF;
+	--french-black: #151618;
 }
 
 a {
-	color: inherit;
+	color: black;
+	text-decoration: none;
 }
 
-code {
-	font-family: menlo, inconsolata, monospace;
-	font-size: calc(1em - 2px);
-	color: #555;
-	background-color: #f0f0f0;
-	padding: 0.2em 0.4em;
+a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+label {
+	display: block;
+}
+
+input, button, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	padding: 0.4em;
+	margin: 0 0 0.5em 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
 	border-radius: 2px;
 }
 
-@media (min-width: 400px) {
-	body {
-		font-size: 16px;
-	}
+input:disabled {
+	color: #ccc;
+}
+
+input[type="range"] {
+	height: 0;
+}
+
+button {
+	color: #333;
+	background-color: #f4f4f4;
+	outline: none;
+}
+
+button:disabled {
+	color: #999;
+}
+
+button:not(:disabled):active {
+	background-color: #ddd;
+}
+
+button:focus {
+	border-color: #666;
 }

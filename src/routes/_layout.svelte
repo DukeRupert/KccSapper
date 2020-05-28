@@ -1,21 +1,29 @@
 <script>
 	import Nav from '../components/Nav.svelte';
+	import Navbar from '../components/navbar.svelte';
 
 	export let segment;
 </script>
 
 <style>
 	main {
-		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
+		text-align: center;
+		padding: 0px;
+		max-width: 100%;
+		height: 100%;
 		margin: 0 auto;
-		box-sizing: border-box;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 </style>
 
+<!-- Original Template Code
 <Nav {segment}/>
+-->
+
+<Navbar />
 
 <main>
 	<slot></slot>
