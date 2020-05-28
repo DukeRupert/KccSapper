@@ -22,7 +22,7 @@
 
   .title {
     margin-left: 10px;
-    font-size: 24px;
+    font-size: 19px;
     font-weight: bold;
     letter-spacing: 1px;
   }
