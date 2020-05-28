@@ -23,8 +23,13 @@
     transition: background var(--speed);
     padding: 0.5rem;
     color: var(--text-color);
+  }
+
+  button {
     font-size: 17px;
     font-weight: bold;
+    background-color: var(--menu-bg);
+    border: none;
   }
       
 </style>
