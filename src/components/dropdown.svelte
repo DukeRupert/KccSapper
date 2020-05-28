@@ -3,6 +3,8 @@
     import { bars } from 'svelte-awesome/icons';
     import DropdownItem from './dropdownItem.svelte'
     import { dropdownOpen } from '../store'
+    import { slide } from 'svelte/transition';
+	import { sineIn } from 'svelte/easing';
 
     let dropdownOpen_value = false;
 
@@ -51,7 +53,7 @@
 {#if dropdownOpen_value}
     <li>
         <button on:click={toggle}><Icon data={bars} scale='2'/></button>
-        <div>
+        <div in:slide="{{duration: 500, easing: sineIn }}">
             <DropdownItem title='MENU' route='/menu' onClick={toggle}/>
             <DropdownItem title='LOCATIONS' route='/locations' onClick={toggle}/>
             <DropdownItem title='ABOUT US' route='/about' onClick={toggle}/>
