@@ -1,7 +1,8 @@
 <script>
-  export let src = "";
+  export let label = '';
+  export let route = '';
+  export let src = '';
   export let alt = '';
-  export let label = "";
   export let left = false;
   export let right = false;
 </script>
@@ -78,7 +79,7 @@
 
 <div class="banner">
   <img {src} alt={alt} />
-  <a class:left class:right href="#">
+  <a class:left class:right href={route}>
     <p>{label}</p>
   </a>
 </div>
