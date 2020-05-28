@@ -3,6 +3,7 @@
 	import Banner from "../components/banner.svelte";
 	let title = "Kagen's Coffee & Crepes";
 	let src = "/build/images/crepeBanana.jpg";
+	export let ready;
 </script>
 	  
 <style>
