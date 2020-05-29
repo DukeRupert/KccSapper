@@ -1,8 +1,8 @@
 <script>
     let container;
     let map;
-    let zoom = 8;
-    let center = {lat: -34.397, lng: 150.644};
+    let zoom = 17;
+    let center = {lat: 46.286508, lng: -119.276502};
 
     import { onMount } from 'svelte';
 
@@ -15,10 +15,10 @@
 </script>
 
 <style>
-    .full-screen {
-    width: 100vw;
-    height: 100vh;
+    div {
+    width: 30vw;
+    height: 30vw;
     }
 </style>
 
-<div class="full-screen" bind:this={container}></div>
+<div bind:this={container}></div>

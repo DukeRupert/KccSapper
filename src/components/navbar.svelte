@@ -39,5 +39,6 @@
   <NavItem title="Menu" route='/menu'/>
   <NavItem title="Locations" route='/locations'/>
   <NavItem title="About Us" route='/about'/>
+  <NavItem title="Order Online" route='/test'/>
 </nav>
 {/if}
