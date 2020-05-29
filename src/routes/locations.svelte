@@ -1,6 +1,9 @@
 <script>
 	import Map from '../components/map.svelte'
 	import MapCard from '../components/mapCard.svelte'
+	import MapCard1 from '../components/mapCard1.svelte'
+	let center = {lat: 46.286508, lng: -119.276502}
+    let center2 = {lat: 46.286, lng: -119.276}
 </script>
 
 <svelte:head>
@@ -36,6 +39,9 @@
 
 <div class='cards'>
 	<div class='card'>
-		<MapCard />
+		<MapCard center={center} />
+	</div>
+	<div class='card'>
+		<MapCard1 center={center2} />
 	</div>
 </div>
