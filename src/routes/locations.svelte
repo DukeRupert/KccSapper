@@ -21,6 +21,7 @@
 
 	.card {
 		flex: 1;
+		min-width: 300px;
 		max-width: 30%;
 		max-height: 70%;
 		margin: 2%;
