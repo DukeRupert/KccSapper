@@ -40,7 +40,7 @@
     div {
         position: fixed;
         z-index: 100;
-        top: var(--nav-size);
+        top: 80px;
         left: 0;
         width:100%;
         height: calc(100% - var(--nav-size));
