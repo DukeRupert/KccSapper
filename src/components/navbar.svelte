@@ -15,7 +15,7 @@
 
 <style>
   nav {
-    height: var(--nav-size);
+    height: 80px;
     background-color: white;
     color: black;
     display: flex;

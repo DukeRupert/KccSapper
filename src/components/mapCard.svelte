@@ -1,31 +1,26 @@
 <script>
-    import Map from './map.svelte'
-    let ready = false;
-	function toggleReady() {
-		ready = !ready;
-	}
-	window.initMap = toggleReady;
-    export let center = {}
+    export let link='';
+    export let image='';
+    export let title='';
+    export let address='';
+    export let phone='';
+    export let hours='';
 </script>
 
-<svelte:head>
-	<script 
-		src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDHsJtQBjSzsLPwckAWjEPymWqY-zZtFOw&callback=initMap'>
-	</script>
-	<title>Locations</title>
-</svelte:head>
-
-{#if ready }
-    <Map center={center}></Map>
-    <h1>UPTOWN KAGENS</h1>
-    <p>270 Williams Boulevard <br /> Richland, WA 99354</p>
-    <p>509-851-7186</p>
-    <p>Sunday – Saturday | 7:00 a.m. to 6:00 p.m.</p>
-{:else}
-    <h1>loading</h1>
-{/if}
+<a href={link}><img src={image}></a>
+<h1>{title}</h1>
+<p>{@html address}</p>
+<p>{phone}</p>
+<p>{hours}</p>
 
 <style>
+    img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    }
+
     p {
 		width: 100%;
 		font-size: 17px;

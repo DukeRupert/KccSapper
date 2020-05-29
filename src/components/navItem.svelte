@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 22px;
   }
 
   a {
