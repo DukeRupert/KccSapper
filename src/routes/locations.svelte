@@ -55,17 +55,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    bottom: 50%;
-    left: 50%;
-    height: calc(var(--nav-size) * 0.6);
-    width: auto;
     padding-bottom: 5%;
-    border-radius: 40px;
     color: black;
 	font-size: 32px;
 	font-weight: bold;
 	letter-spacing: 2px;
   }
+
+  @media only screen and (max-width: 655px) {
+  .banner {
+	height: 200px;
+	background-image: url('../images/banner_crepe_savory.jpg');
+	background-size: cover;
+  }
+
+  .title {
+	  align-items: center;
+	  font-size: 24px;
+	  letter-spacing: 1px;
+  }
+}
 </style>
 
 <div>
