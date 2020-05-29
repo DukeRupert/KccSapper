@@ -25,13 +25,13 @@
 		max-height: 70%;
 		margin: 2%;
 		padding: 20px;
-		border: 1px black solid;
+		box-shadow: -2px -2px 5px darkgray, 2px 2px 5px lightgray;
 		border-radius: 20px;
 
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-		align-items: center;
+		align-items: flex-start;
 	}
 	div {
 		width: 100%;
