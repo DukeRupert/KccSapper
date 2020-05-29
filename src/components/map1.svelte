@@ -16,8 +16,8 @@
 
 <style>
     div {
-    width: 25vw;
-    height: 25vw;
+    width: 20vw;
+    height: 20vw;
     }
 </style>
 
