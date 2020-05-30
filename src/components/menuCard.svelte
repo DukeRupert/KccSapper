@@ -1,19 +1,21 @@
 <script>
-    export let image='';
+    export let src;
     export let alt='';
     export let title='';
     export let ingredients='';
     export let nutrition='';
     export let allergens='';
 
-    let phoneNumber = 'tel:' + phone;
+    import Fa from 'svelte-fa'
+    import { faCaretUp } from '@fortawesome/free-solid-svg-icons'
 </script>
 
-<a href={link}><img src={image} alt={alt}></a>
+<img {src} alt={alt}>
 <h1>{title}</h1>
-<a href={link}><p>{@html address}</p></a>
-<a id='phone' href={phoneNumber}><p>{phone}</p></a>
-<p>{hours}</p>
+<button>INGREDIENTS <Fa class= 'icon' icon={faCaretUp} primaryColor="darkgrey" /></button>
+<button>NUTRITIONAL INFO <Fa class= 'icon' icon={faCaretUp} primaryColor="darkgrey" /></button>
+<button>ALLERGENS <Fa class= 'icon' icon={faCaretUp} primaryColor="darkgrey" /></button>
+
 
 <style>
     img {
@@ -28,8 +30,13 @@
         letter-spacing: 1px;
     }
 
-    p {
-		width: 100%;
-		font-size: 17px;
-	}
+    button {
+        color: gray;
+        background: none;
+        border: none;
+    }
+
+    .icon {
+        margin-left: 0.5em;
+    }
 </style>

@@ -1,5 +1,5 @@
 <script>
-
+	import MenuCard from '../components/menuCard.svelte'
 </script>
 
 <svelte:head>
@@ -17,17 +17,16 @@
 
 	.card {
 		flex: 1;
-		min-width: 300px;
+		min-width: 200px;
 		max-width: 30%;
-		max-height: 70%;
 		margin: 2%;
 		padding: 20px;
 		box-shadow: -2px -2px 5px darkgray, 2px 2px 5px lightgray;
 		border-radius: 20px;
 
 		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
+		flex-direction: column;
+		justify-content: space-between;
 		align-items: flex-start;
 	}
 	div {
@@ -42,10 +41,13 @@
 </style>
 
 <div>
-	
 	<div class='cards'>
 		<div class='card'>
-			
+			<MenuCard 
+				src='../images/crepe_lemonSugar.jpg' 
+				alt='A lemon sugar crepe.'
+				title='Lemon Sugar Crepe'
+				/>
 		</div>
 		<div class='card'>
 				
