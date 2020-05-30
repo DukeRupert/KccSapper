@@ -14,7 +14,6 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
-		padding: 1em;
 		font-size: 1em;
 		text-align: left;
 	}
@@ -40,10 +39,11 @@
 	}
 
 	.banner {
-		height: 400px;
+		height: 30vh;
 		width: 100%;
 		background-image: url('../images/banner_crepe_savory.jpg');
 		background-repeat: no-repeat;
+		background-size: cover;
 		background-position: center;
 
 		display: flex;
@@ -57,17 +57,12 @@
     justify-content: center;
     padding-bottom: 5%;
     color: black;
-	font-size: 32px;
-	font-weight: bold;
-	letter-spacing: 2px;
+		font-size: 32px;
+		font-weight: bold;
+		letter-spacing: 2px;
   }
 
   @media only screen and (max-width: 655px) {
-  .banner {
-	height: 200px;
-	background-image: url('../images/banner_crepe_savory.jpg');
-	background-size: cover;
-  }
 
   .title {
 	  align-items: center;
@@ -92,7 +87,7 @@
 				title='UPTOWN KAGENS'
 				address={uptown}
 				phone='509-851-7186'
-				hours='Sunday – Saturday | 7:00 a.m. to 6:00 p.m.'
+				hours='Monday – Sunday: 7am to 6pm'
 				/>
 		</div>
 		<div class='card'>
@@ -103,7 +98,7 @@
 					title='PNNL KAGENS'
 					address={pnnl}
 					phone='509-851-7186'
-					hours='Sunday – Saturday | 7:00 a.m. to 6:00 p.m.'
+					hours='Monday – Sunday: 7am to 6pm'
 					/>
 			</div>
 	</div>
