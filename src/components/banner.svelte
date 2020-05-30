@@ -24,7 +24,7 @@
     justify-content: center;
     position: absolute;
     bottom: 50%;
-    left: 60%;
+    right: 20%;
     height: calc(var(--nav-size) * 0.6);
     width: auto;
     padding: 5px;
@@ -34,7 +34,7 @@
     border-radius: 40px;
     color: white;
     font-size: 24px;
-    background-color: rgba(247, 236, 191, 0);
+    background-color: rgba(0, 0, 0, 0.3);
     transition: all calc(var(--speed) * 0.4) ease-in;
   }
 
@@ -48,7 +48,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 20%;
     height: calc(var(--nav-size) * 0.6);
     width: auto;
@@ -59,6 +59,7 @@
     border-radius: 40px;
     color: white;
     font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.3);
     transition: all calc(var(--speed) * 0.4) ease-in;
   }
 
