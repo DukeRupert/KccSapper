@@ -10,6 +10,7 @@
 <style>
   .banner {
     position: relative;
+    border-bottom: 2px black solid;
   }
 
   img {

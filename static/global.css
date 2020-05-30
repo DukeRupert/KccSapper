@@ -16,6 +16,19 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, 'EB Garamond', "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
+body::-webkit-scrollbar {
+	width: 0.25rem;
+	height: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+	background: var(--vert-de-terre);
+}
+
+body::-webkit-scrollbar-thumb {
+	background: var(--french-chateau);
+}
+
 :root {
 	--bg: var(--vert-de-terre);
 	--bg-accent: #484a4d;
