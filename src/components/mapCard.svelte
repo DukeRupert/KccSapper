@@ -6,12 +6,14 @@
     export let address='';
     export let phone='';
     export let hours='';
+
+    let phoneNumber = 'tel:' + phone;
 </script>
 
 <a href={link}><img src={image} alt={alt}></a>
 <h1>{title}</h1>
 <a href={link}><p>{@html address}</p></a>
-<p>{phone}</p>
+<a id='phone' href={phoneNumber}><p>{phone}</p></a>
 <p>{hours}</p>
 
 <style>
