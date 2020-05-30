@@ -17,16 +17,16 @@ body {
 }
 
 body::-webkit-scrollbar {
-	width: 0.25rem;
-	height: 0.25rem;
+	width: 0.5rem;
+	height: 0.5rem;
 }
 
 body::-webkit-scrollbar-track {
-	background: var(--vert-de-terre);
+	background:white;
 }
 
 body::-webkit-scrollbar-thumb {
-	background: var(--french-chateau);
+	background: #F7ECBF;
 }
 
 :root {
