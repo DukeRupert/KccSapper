@@ -8,7 +8,6 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
-		padding: 1em;
 		font-size: 1em;
 		text-align: left;
 	}
