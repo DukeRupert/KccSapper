@@ -23,8 +23,15 @@
     padding: 10px;
     box-sizing: border-box;
     justify-content: flex-end;
-    box-shadow: 0 4px 2px -2px darkgray;
+    box-shadow: 0 4px 2px -2px gray;
     z-index: 101;
+  }
+
+  @media only screen and (max-width: 655px) {
+
+    nav {
+      position: fixed;
+    }
   }
 </style>
 
