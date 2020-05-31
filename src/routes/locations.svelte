@@ -44,7 +44,7 @@
 		background-image: url('../images/banner_crepe_savory.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position: center;
+		background-position: 50% 40%;
 
 		display: flex;
 		justify-content: center;
@@ -55,7 +55,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 5%;
     color: black;
 		font-size: 32px;
 		font-weight: bold;
@@ -68,7 +67,13 @@
 	  align-items: center;
 	  font-size: 24px;
 	  letter-spacing: 1px;
+		margin-bottom: 5%;
   }
+
+	.banner {
+		height: 15vh;
+		background-position: 60% 0;
+	}
 }
 </style>
 
