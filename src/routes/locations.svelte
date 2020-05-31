@@ -10,6 +10,19 @@
 </svelte:head>
 
 <style>
+	div {
+		width: 100%;
+		height: 100%;
+		background-color:  #F7ECBF;
+	}
+
+	h1 {
+		color: black;
+		font-size: 32px;
+		font-weight: bold;
+		letter-spacing: 2px;
+	}
+
 	.cards {
 		display: flex;
 		flex-wrap: wrap;
@@ -27,15 +40,12 @@
 		padding: 20px;
 		box-shadow: -2px -2px 5px darkgray, 2px 2px 5px lightgray;
 		border-radius: 20px;
+		background-color: white;
 
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: flex-start;
-	}
-	div {
-		width: 100%;
-		height: 100%;
 	}
 
 	.banner {
@@ -51,24 +61,13 @@
 		align-items: center;
 	}
 
-	.title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-		font-size: 32px;
-		font-weight: bold;
-		letter-spacing: 2px;
-  }
-
   @media only screen and (max-width: 655px) {
-
-  .title {
-	  align-items: center;
-	  font-size: 24px;
+	
+	h1 {
+		font-size: 24px;
 	  letter-spacing: 1px;
-		margin-bottom: 5%;
-  }
+		margin-bottom: 15%;
+	}
 
 	.banner {
 		height: 15vh;
@@ -79,9 +78,9 @@
 
 <div>
 	<div class='banner'>
-		<div class='title'>
-			LOCATIONS
-		</div>
+		<h1>
+				LOCATIONS
+		</h1>
 	</div>
 	<div class='cards'>
 		<div class='card'>
