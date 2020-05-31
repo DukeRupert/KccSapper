@@ -13,7 +13,7 @@
 	div {
 		width: 100%;
 		height: 100%;
-		background-color:  F8E1DB;
+		background-color:  #F8E1DB;
 	}
 
 	h1 {
