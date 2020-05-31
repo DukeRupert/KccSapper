@@ -9,10 +9,17 @@
 		padding: 2em;
 		font-size: 2em;
 		text-align: left;
+		background-color: var(--custard);
 	}
 
 	p {
 		font-size: 17px;
+	}
+
+	img {
+		width: 40vw;
+		border-radius: 50%;
+		align-self: center;
 	}
 
 	@media only screen and (max-width: 655px) {
@@ -45,4 +52,5 @@
 		Keep following us here, Facebook, and Instagram to see our future growth
 		plans!
 	</p>
+	<img src='../images/kagen_small.jpg' alt='A photo of Kagen Cox'>
 </div>
