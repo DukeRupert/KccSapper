@@ -1,5 +1,30 @@
 <script>
 	import MenuCard from '../components/menuCard.svelte'
+
+	const lemonSugar = {
+		src: '../images/crepe_lemonSugar.jpg', 
+		alt: 'A lemon sugar crepe.',
+		title: 'Lemon Sugar Crepe',
+	};
+
+	const peanutBanana = {
+		src: '../images/crepe_PeanutButterBanana.jpg',
+		alt: 'A peanut butter and banana crepe.',
+		title: 'Peanut Butter & Banana Crepe',
+	}
+
+	const chocolateRaspberry = {
+		src: '../images/crepe_chocolateRaspberry.jpg',
+		alt: 'A chocolate raspberry crepe.',
+		title: 'Chocolate & Raspberry Crepe',
+	}
+
+	const strawberryNutella = {
+		src: '../images/crepe_strawberryNutella.jpg',
+		alt: 'A strawberry and nutella crepe.',
+		title: 'Strawberry & Nutella Crepe',
+	}
+
 </script>
 
 <svelte:head>
@@ -50,32 +75,16 @@
 <div>
 	<div class='cards'>
 		<div class='card'>
-			<MenuCard 
-				src='../images/crepe_lemonSugar.jpg' 
-				alt='A lemon sugar crepe.'
-				title='Lemon Sugar Crepe'
-			/>
+			<MenuCard {...lemonSugar} />
 		</div>
 		<div class='card'>
-			<MenuCard 
-			src='../images/crepe_PeanutButterBanana.jpg' 
-			alt='A peanut butter and banana crepe.'
-			title='Peanut Butter & Banana Crepe'
-			/>
+			<MenuCard {...peanutBanana} />
 		</div>
 		<div class='card'>
-			<MenuCard 
-			src='../images/crepe_chocolateRaspberry.jpg' 
-			alt='A chocolate raspberry crepe.'
-			title='Chocolate & Raspberry Crepe'
-			/>
+			<MenuCard {...chocolateRaspberry} />
 		</div>
 		<div class='card'>
-			<MenuCard 
-			src='../images/crepe_strawberryNutella.jpg' 
-			alt='A strawberry and nutella crepe.'
-			title='Strawberry & Nutella Crepe'
-			/>
+			<MenuCard {...strawberryNutella} />
 		</div>
 	</div>
 </div>
