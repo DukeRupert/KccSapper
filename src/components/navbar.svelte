@@ -23,6 +23,8 @@
     padding: 10px;
     box-sizing: border-box;
     justify-content: flex-end;
+    box-shadow: 0 4px 2px -2px darkgray;
+    z-index: 101;
   }
 </style>
 

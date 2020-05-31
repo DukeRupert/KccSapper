@@ -9,7 +9,6 @@
 		padding: 2em;
 		font-size: 2em;
 		text-align: left;
-		background-color: var(--custard);
 	}
 
 	p {
@@ -20,6 +19,7 @@
 		width: 40vw;
 		border-radius: 50%;
 		align-self: center;
+		margin-top: 0.67em;
 	}
 
 	@media only screen and (max-width: 655px) {
