@@ -9,6 +9,7 @@
 		padding: 2em;
 		font-size: 2em;
 		text-align: left;
+		background-color:  #F7ECBF;
 	}
 
 	p {

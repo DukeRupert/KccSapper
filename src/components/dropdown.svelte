@@ -39,13 +39,15 @@
     }
     div {
         position: fixed;
-        z-index: 100;
+        overflow: hidden;
+        z-index: 99;
         top: 80px;
         left: 0;
         width:100%;
-        height: calc(100% - var(--nav-size));
-        background-color: var(--menu-bg);
-        overflow: hidden;
+        height: calc(100% - 80px);
+        box-sizing: border-box;
+        border-top: 2px black solid;
+        background-color: white;
     }
     
 </style>

@@ -28,8 +28,8 @@
   button {
     font-size: 17px;
     font-weight: bold;
-    background-color: var(--menu-bg);
     border: none;
+    background-color: white;
   }
       
 </style>
