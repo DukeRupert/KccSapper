@@ -34,7 +34,7 @@
 <h1>{title}</h1>
 <button on:click={toggleIngredients}>INGREDIENTS <Fa class= 'icon' icon={iStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" /></button>
     {#if ingredientsToggle }
-        <div transition:slide>
+        <div transition:slide="{{ duration: 500 }}">
             <p >Ingredient #1</p>
             <p >Ingredient #2</p>
             <p >Ingredient #3</p>
@@ -42,7 +42,7 @@
     {/if}
 <button on:click={toggleNutrition}>NUTRITIONAL INFO <Fa class= 'icon' icon={nStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" /></button>
     {#if nutritionToggle }
-        <div transition:slide>
+        <div transition:slide="{{ duration: 300 }}">
             <p>Nutrition #1</p>
             <p>Nutrition #2</p>
             <p>Nutrition #3</p>
