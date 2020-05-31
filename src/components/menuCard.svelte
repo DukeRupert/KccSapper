@@ -1,4 +1,6 @@
 <script>
+    import { slide } from 'svelte/transition';
+
     export let src;
     export let alt='';
     export let title='';
@@ -32,24 +34,28 @@
 <h1>{title}</h1>
 <button on:click={toggleIngredients}>INGREDIENTS <Fa class= 'icon' icon={iStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" /></button>
     {#if ingredientsToggle }
-        <p>Ingredient #1</p>
-        <p>Ingredient #2</p>
-        <p>Ingredient #3</p>
+        <div transition:slide>
+            <p >Ingredient #1</p>
+            <p >Ingredient #2</p>
+            <p >Ingredient #3</p>
+        </div>
     {/if}
-<button on:click={toggleNutrition}>NUTRITIONAL INFO <Fa class= 'icon' icon={nStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" />
+<button on:click={toggleNutrition}>NUTRITIONAL INFO <Fa class= 'icon' icon={nStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" /></button>
     {#if nutritionToggle }
-        <p>Nutrition #1</p>
-        <p>Nutrition #2</p>
-        <p>Nutrition #3</p>
+        <div transition:slide>
+            <p>Nutrition #1</p>
+            <p>Nutrition #2</p>
+            <p>Nutrition #3</p>
+        </div>
     {/if}
-</button>
-<button on:click={toggleAllergens}>ALLERGENS <Fa class= 'icon' icon={aStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" />
+<button on:click={toggleAllergens}>ALLERGENS <Fa class= 'icon' icon={aStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" /></button>
     {#if allergensToggle }
-        <p>Allergen #1</p>
-        <p>Allergen #2</p>
-        <p>Allergen #3</p>
+        <div transition:slide>
+            <p>Allergen #1</p>
+            <p>Allergen #2</p>
+            <p>Allergen #3</p>
+        </div>
     {/if}
-</button>
 
 
 <style>
@@ -58,16 +64,29 @@
     height: 100%;
     position: relative;
     overflow: hidden;
+    box-sizing: border-box;
+    border: 1px black solid;
+    border-radius: 20px;
     }
 
     h1 {
-        font-weight: normal;
-        letter-spacing: 1px;
+        font-size: 19px;
+        font-weight: medium;
     }
 
     button {
         color: gray;
         background: none;
         border: none;
+        margin: 0px;
+        padding: 0px;
+        margin-top: 0.5em;
+    }
+
+    p {
+        color: black;
+        font-size: 1em;
+        margin: 0px;
+        padding-left: 0.5em;
     }
 </style>

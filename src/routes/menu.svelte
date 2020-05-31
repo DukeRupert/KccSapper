@@ -10,15 +10,14 @@
 	.cards {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		font-size: 1em;
 		text-align: left;
 	}
 
 	.card {
-		flex: 1;
-		min-width: 200px;
-		max-width: 30%;
+		flex: 0 0 auto;
+		width: 25vw;
 		margin: 2%;
 		padding: 20px;
 		box-shadow: -2px -2px 5px darkgray, 2px 2px 5px lightgray;
@@ -37,6 +36,14 @@
 
   @media only screen and (max-width: 655px) {
 
+	.cards {
+		justify-content: center;
+	}
+
+	.card {
+		width: 60vw;
+	}
+
   }
 </style>
 
@@ -47,10 +54,28 @@
 				src='../images/crepe_lemonSugar.jpg' 
 				alt='A lemon sugar crepe.'
 				title='Lemon Sugar Crepe'
-				/>
+			/>
 		</div>
 		<div class='card'>
-				
+			<MenuCard 
+			src='../images/crepe_PeanutButterBanana.jpg' 
+			alt='A peanut butter and banana crepe.'
+			title='Peanut Butter & Banana Crepe'
+			/>
+		</div>
+		<div class='card'>
+			<MenuCard 
+			src='../images/crepe_chocolateRaspberry.jpg' 
+			alt='A chocolate raspberry crepe.'
+			title='Chocolate & Raspberry Crepe'
+			/>
+		</div>
+		<div class='card'>
+			<MenuCard 
+			src='../images/crepe_strawberryNutella.jpg' 
+			alt='A strawberry and nutella crepe.'
+			title='Strawberry & Nutella Crepe'
+			/>
 		</div>
 	</div>
 </div>
