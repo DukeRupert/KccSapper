@@ -1,5 +1,5 @@
 <script>
-    import { slide } from 'svelte/transition';
+    import { slide, fade } from 'svelte/transition';
     import { quintOut } from 'svelte/easing';
 
 
@@ -32,7 +32,7 @@
     import { faCaretUp, faCaretDown } from '@fortawesome/free-solid-svg-icons'
 </script>
 
-<img {src} alt={alt}>
+<img {src} alt={alt} in:fade>
 <h1>{title}</h1>
 <button on:click={toggleIngredients}>INGREDIENTS <Fa class= 'icon' icon={iStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" /></button>
     {#if ingredientsToggle }
