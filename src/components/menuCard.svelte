@@ -36,7 +36,7 @@
 <h1>{title}</h1>
 <button on:click={toggleIngredients}>INGREDIENTS <Fa class= 'icon' icon={iStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" /></button>
     {#if ingredientsToggle }
-        <div transition:slide="{{delay: 250, duration: 300, easing: quintOut }}">
+        <div in:slide="{{delay: 250, duration: 300, easing: quintOut }}">
             <p >Ingredient #1</p>
             <p >Ingredient #2</p>
             <p >Ingredient #3</p>
@@ -44,7 +44,7 @@
     {/if}
 <button on:click={toggleNutrition}>NUTRITIONAL INFO <Fa class= 'icon' icon={nStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" /></button>
     {#if nutritionToggle }
-        <div transition:slide>
+        <div in:slide>
             <p>Nutrition #1</p>
             <p>Nutrition #2</p>
             <p>Nutrition #3</p>
@@ -52,7 +52,7 @@
     {/if}
 <button on:click={toggleAllergens}>ALLERGENS <Fa class= 'icon' icon={aStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" /></button>
     {#if allergensToggle }
-        <div transition:slide>
+        <div in:slide>
             <p>Allergen #1</p>
             <p>Allergen #2</p>
             <p>Allergen #3</p>

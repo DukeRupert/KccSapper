@@ -49,12 +49,13 @@
 	}
 
 	.banner {
-		height: 30vh;
+		height: 25vh;
 		width: 100%;
 		background-image: url('../images/banner_crepe_savory.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: 50% 40%;
+		filter: grayscale(0.2);
 
 		display: flex;
 		justify-content: center;
