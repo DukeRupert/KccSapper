@@ -70,6 +70,7 @@
   }
 
   @media (max-width: 655px) {
+
     .right {
       padding-right: 1rem;
       padding-left: 1rem;
