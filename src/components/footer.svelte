@@ -8,7 +8,7 @@
     height: 15vw;
     width: 100%;
     padding: 1em;
-    background-color: black;
+    background-color: #343434;
 
     display: flex;
     flex-direction: row;
@@ -27,7 +27,7 @@
     justify-content: flex-start;
     align-content: flex-start;
     text-align: left;
-    background-color: black;
+    background-color: #343434;
     color: white;
   }
 
@@ -47,6 +47,14 @@
     font-size: 1.5em;
     color: white;
   }
+
+  .copyright {
+		position: absolute;
+		bottom: 0;
+		text-align: center; 
+    color: white;
+    font-size: 12px;
+	}
 
   @media only screen and (max-width: 655px) {
     div {
@@ -72,4 +80,5 @@
     <a href='/feedback'><p>Contact Us</p></a>
   </div>
   <div class='card'></div>
+  <p class='copyright'>&copy The Crepe Shop, LLC 2020</p>
 </div>
