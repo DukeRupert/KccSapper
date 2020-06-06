@@ -30,7 +30,8 @@
   @media only screen and (max-width: 655px) {
 
     nav {
-      position: fixed;
+      position: sticky;
+      top: 0px;
     }
   }
 </style>

@@ -15,13 +15,6 @@
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-
-	@media only screen and (max-width: 655px) {
-
-		main {
-			padding-top: 80px;
-		}
-	}
 </style>
 
 <!-- Original Template Code
