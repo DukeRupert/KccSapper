@@ -1,14 +1,12 @@
 <svelte:head>
-	<title>About Us</title>
+	<title>Jobs</title>
 </svelte:head>
 
 <style>
 	div {
 		display: flex;
 		flex-direction: column;
-		box-sizing: border-box;
-		padding: 4em;
-		padding-top: 0;
+		padding: 2em;
 		font-size: 2em;
 		text-align: left;
 		background-color:  #F7EEDF;
@@ -19,35 +17,30 @@
 	}
 
 	img {
-		width: 30vw;
+		width: 40vw;
 		border-radius: 50%;
 		align-self: center;
 		margin-top: 0.67em;
 	}
 
 	@media only screen and (max-width: 655px) {
-
+	
 	div {
 		padding: 1em;
 	}
-
+	
 	h1 {
 		font-size: 24px;
 	}
-	
 	p {
 		font-size: 14px;
-	}
-
-	img {
-		width: 60vw;
 	}
 
 }
 </style>
 
 <div>
-	<h1>OUR STORY</h1>
+	<h1>APPLY NOW</h1>
 	<p>
 		Jennifer and I (Kagen) found Crepes during one of our road trips, and
 		felt we couldn’t pass up bringing this cuisine to the Tri-Cities. After

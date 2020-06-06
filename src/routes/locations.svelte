@@ -29,15 +29,17 @@
 		justify-content: space-evenly;
 		font-size: 1em;
 		text-align: left;
+		box-sizing: border-box;
+		padding: 1em;
 	}
 
 	.card {
 		flex: 1;
-		min-width: 300px;
-		max-width: 30%;
+		min-width: 25vw;
+		max-width: 30vw;
 		max-height: 70%;
-		margin: 2%;
-		padding: 20px;
+		margin: 1em;
+		padding: 1em;
 		box-shadow: -2px -2px 5px darkgray, 2px 2px 5px lightgray;
 		border-radius: 20px;
 		background-color: white;
@@ -63,11 +65,21 @@
 	}
 
   @media only screen and (max-width: 655px) {
+
 	
 	h1 {
 		font-size: 24px;
-	  letter-spacing: 1px;
+	  	letter-spacing: 1px;
 		margin-bottom: 15%;
+	}
+
+	.card  {
+		min-width: 70vw;
+		margin-top: 0;
+	}
+
+	.cards {
+		padding: 2em;
 	}
 
 	.banner {

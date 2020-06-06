@@ -1,12 +1,8 @@
-<script>
-	
+<script type="text/javascript">
     var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'awesome',
-        clientId: 'YOUR_CLIENT_ID'
+      accessToken: 'your-token'
     });
     feed.run();
-
 </script>
 
 <style>
