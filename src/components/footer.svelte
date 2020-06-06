@@ -8,7 +8,7 @@
     height: 15vw;
     width: 100%;
     padding: 1em;
-    background-color: white;
+    background-color: black;
 
     display: flex;
     flex-direction: row;
@@ -19,16 +19,16 @@
   .card {
     width: 50%;
     margin: 0;
-    padding: 0.5em;
+    padding: 0;
     box-sizing: border-box;
-    background-color: white;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: flex-start;
     text-align: left;
-    color: black;
+    background-color: black;
+    color: white;
   }
 
   h4 {
@@ -36,6 +36,8 @@
     margin-bottom: 0.5em;
     width: 100%;
     font-size: 2em;
+    letter-spacing: 2px;
+    color: white;
   }
 
   p {
@@ -43,6 +45,7 @@
     margin-bottom: 0.5em;
     width: 100%;
     font-size: 1.5em;
+    color: white;
   }
 
   @media only screen and (max-width: 655px) {
@@ -65,9 +68,8 @@
 
 <div>
   <div class='card'>
-    <h4>Other Links</h4>
+    <h4>LINKS</h4>
     <a href='/feedback'><p>Contact Us</p></a>
-    <a href='/jobs'><p>Join our team</p></a>
   </div>
   <div class='card'></div>
 </div>

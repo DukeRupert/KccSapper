@@ -1,7 +1,16 @@
 <script>
   import { draw } from 'svelte/transition';
   import { quintIn } from 'svelte/easing';
+
+
   export let title = "";
+
+  // Ensure menu is not toggled on when navigating home
+  import { dropdownOpen } from '../store';
+
+  function closeDropdown() {
+    dropdownOpen.set(false);
+  }
 
   // Animations do not play on initial load by default. Condition change used to trigger logo animation.
   let condition = false;
@@ -42,7 +51,7 @@
 </style>
 
 <li>
-    <a href="/">
+    <a href="/" on:click={closeDropdown}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 74.666832 129.20558"
@@ -66,5 +75,5 @@
       </g>
     </svg>
   </a>
-  <a href="/" class="title">{title}</a>
+  <a href="/" on:click={closeDropdown} class="title">{title}</a>
 </li>
