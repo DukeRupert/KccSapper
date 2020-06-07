@@ -1,9 +1,6 @@
 
-<script type="text/javascript">
-  var feed = new Instafeed({
-    accessToken: 'IGQVJVLXNpREpTdV9VaVFQekRHZAnNRSG0tdTZA3SVFqYU1oa05HMGNjWmJPbl9NQkpPSks3OEt1bzl1N1RRMDNfc1gwc0JkTGNqQmJiR0lMVUVsS3NsMWZAhd0tkLWdkWksydmVMbTZAn'
-  });
-  feed.run();
+<script>
+  
 </script>
     
 
