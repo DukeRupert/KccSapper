@@ -31,6 +31,7 @@
 
     nav {
       position: sticky;
+      position: -webkit-sticky;
       top: 0px;
     }
   }
