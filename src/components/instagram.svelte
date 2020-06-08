@@ -1,39 +1,54 @@
 <script>
-  
+  import json from '../store/instagram.json'
+  let post = json.data;
 </script>
 
 <style>
-  .banner {
+  div {
     position: relative;
     height: 50vw;
     width: 100%;
     background-color: black;
 
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
 
-  .card {
+  .post {
+    flex: 0 25%;
     height: 50%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: 1px black solid;
-    background-color: red;
+
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
   }
 
 
 </style>
 
-<div class="banner">
-  <div class='card'></div>
-  <div class='card'></div>
-  <div class='card'></div>
-  <div class='card'></div>
-  <div class='card'></div>
-  <div class='card'></div>
-  <div class='card'></div>
-  <div class='card'></div>
+<div>
+  {#each post as {permalink, media_type, media_url}}
+    {#if media_type == 'IMAGE'}
+      <div class='post'>
+        <a href={permalink}>
+          <img src={media_url}/>
+        </a>
+      </div>
+    {/if}
+  {/each}
+  {#each post as {permalink, media_type, media_url}}
+    {#if media_type == 'IMAGE'}
+      <div class='post'>
+        <a href={permalink}>
+          <img src={media_url}/>
+        </a>
+      </div>
+    {/if}
+  {/each}
 </div>
