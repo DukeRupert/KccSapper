@@ -10,7 +10,6 @@
 <style>
   .banner {
     position: relative;
-    border-bottom: 2px black solid;
   }
 
   img {
@@ -25,7 +24,7 @@
     justify-content: center;
     position: absolute;
     bottom: 50%;
-    right: 20%;
+    left: 60%;
     height: calc(var(--nav-size) * 0.6);
     width: auto;
     padding: 5px;
@@ -50,7 +49,7 @@
     justify-content: center;
     position: absolute;
     top: 50%;
-    left: 20%;
+    right: 60%;
     height: calc(var(--nav-size) * 0.6);
     width: auto;
     padding: 5px;
@@ -72,6 +71,7 @@
   @media (max-width: 655px) {
 
     .right {
+      left: 60%;
       padding-right: 1rem;
       padding-left: 1rem;
       border: 3px solid white;
@@ -80,6 +80,7 @@
     }
 
     .left {
+      right: 60%;
       padding-right: 1rem;
       padding-left: 1rem;
       border: 3px solid white;
