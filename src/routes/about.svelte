@@ -11,7 +11,6 @@
 		padding-top: 0;
 		font-size: 2em;
 		text-align: left;
-		background-color:  #F7EEDF;
 	}
 
 	p {

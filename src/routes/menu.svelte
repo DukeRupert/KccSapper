@@ -55,7 +55,6 @@
 		height: 100%;
 		padding-right: 5%; 
 		padding-left: 5%;
-		background-color: #F7EEDF;
 	}
 
 	.cards {
@@ -74,8 +73,6 @@
 		width: 25vw;
 		margin: 1%;
 		padding: 20px;
-		box-shadow: -2px -2px 5px darkgray, 2px 2px 5px lightgray;
-		border-radius: 20px;
 		background-color: white;
 
 		display: flex;

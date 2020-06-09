@@ -16,7 +16,7 @@
 		padding-top: 0;
 		font-size: 2em;
 		text-align: left;
-		background-color:  #F7EEDF;
+		background-color:  white;
 		width: 100%;
 	}
 
@@ -51,7 +51,7 @@
     padding-left: 2rem;
     border-radius: 40px;
 	border-color: black;
-	background-color: rgba(247, 236, 191, 1);
+	background-color: #F7E7A6;
   	}
 
 	@media only screen and (max-width: 655px) {

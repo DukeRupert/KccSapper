@@ -13,7 +13,6 @@
 	div {
 		width: 100%;
 		height: 100%;
-		background-color:  #F7EEDF;
 	}
 
 	h1 {
@@ -40,9 +39,6 @@
 		max-height: 70%;
 		margin: 1em;
 		padding: 1em;
-		box-shadow: -2px -2px 5px darkgray, 2px 2px 5px lightgray;
-		border-radius: 20px;
-		background-color: white;
 
 		display: flex;
 		flex-direction: column;
