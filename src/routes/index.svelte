@@ -24,9 +24,9 @@
 </style>
 	  
 <main>
-	<Banner label='Menu' route='/menu' src="images/crepe_strawberry.jpg" alt='A banana crepe' right />
-	<Banner label='Locations' route='/locations' src="images/latte_large.jpg" alt='A latte' left />
-	<Banner label='Order Online' route='/' src="images/crepe_ham.jpg" alt='A chocolate crepe' right />
+	<Banner label='MENU' route='/menu' src="images/crepe_strawberry.jpg" alt='A banana crepe' right />
+	<Banner label='LOCATIONS' route='/locations' src="images/latte_large.jpg" alt='A latte' left />
+	<Banner label='ORDER ONLINE' route='/' src="images/crepe_ham.jpg" alt='A chocolate crepe' right />
 	<Instagram />
 	<Footer />
 </main>

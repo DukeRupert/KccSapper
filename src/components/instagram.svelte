@@ -26,6 +26,8 @@
 
   img {
     width: 100%;
+    padding-bottom: 50%;
+    position: relative;
     object-fit: cover;
   }
 

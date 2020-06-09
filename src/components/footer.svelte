@@ -66,8 +66,8 @@
 
   .copyright {
     position: absolute;
-    bottom: 1%;
-    right: 1%;
+    bottom: 2%;
+    right: 2%;
     width: auto;
   }
   

@@ -23,8 +23,8 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 50%;
-    left: 60%;
+    bottom: 45%;
+    right: 20%;
     height: calc(var(--nav-size) * 0.6);
     width: auto;
     padding: 5px;
@@ -34,7 +34,7 @@
     border-radius: 40px;
     color: white;
     font-size: 24px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     transition: all calc(var(--speed) * 0.4) ease-in;
   }
 
@@ -49,7 +49,7 @@
     justify-content: center;
     position: absolute;
     top: 50%;
-    right: 60%;
+    left: 20%;
     height: calc(var(--nav-size) * 0.6);
     width: auto;
     padding: 5px;
@@ -59,7 +59,7 @@
     border-radius: 40px;
     color: white;
     font-size: 24px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     transition: all calc(var(--speed) * 0.4) ease-in;
   }
 
@@ -71,18 +71,20 @@
   @media (max-width: 655px) {
 
     .right {
-      left: 60%;
-      padding-right: 1rem;
-      padding-left: 1rem;
+      right: 5%;
+      min-width: 30%;
+      padding-right: 0.25em;
+      padding-left: 0.25em;
       border: 3px solid white;
       border-radius: 30px;
       font-size: 17px;
     }
 
     .left {
-      right: 60%;
-      padding-right: 1rem;
-      padding-left: 1rem;
+      left: 5%;
+      min-width: 30%;
+      padding-right: 0.25em;
+      padding-left: 0.25em;
       border: 3px solid white;
       border-radius: 30px;
       font-size: 17px;
