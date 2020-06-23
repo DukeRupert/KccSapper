@@ -31,7 +31,7 @@
 
   path {
     stroke: black;
-		fill: #F7F7B2;
+		fill: white;
 	}
 
   .title {
