@@ -1,47 +1,72 @@
 <script>
 	import MenuCard from '../components/menuCard.svelte'
 
-	const lemonSugar = {
-		src: '../images/crepe_lemonSugar.jpg', 
+	const theLemon = {
+		src: '../images/crepe_theLemon.jpg', 
 		alt: 'A lemon sugar crepe.',
-		title: 'Lemon & Sugar',
+		title: 'The Lemon',
 	};
 
-	const peanutBanana = {
+	const thePeanutButter = {
 		src: '../images/crepe_PeanutButterBanana.jpg',
 		alt: 'A peanut butter and banana crepe.',
-		title: 'Peanut Butter & Banana ',
+		title: 'The Peanut Butter ',
 	}
 
-	const chocolateRaspberry = {
-		src: '../images/crepe_chocolateRaspberry.jpg',
+	const theChocolate = {
+		src: '../images/crepe_theChocolate.jpg',
 		alt: 'A chocolate raspberry crepe.',
-		title: 'Chocolate & Raspberry',
+		title: 'The Chocolate',
 	}
 
-	const strawberryNutella = {
-		src: '../images/crepe_strawberryNutella.jpg',
+	const theNutella = {
+		src: '../images/crepe_theNutella.jpg',
 		alt: 'A strawberry and nutella crepe.',
-		title: 'Strawberry & Hazelnut Spread',
+		title: 'The Nutella',
 	}
 
-	const hamHollandaise = {
-		src: '../images/crepe_hamHollandaise.jpg',
+	const theEgg = {
+		src: '../images/crepe_theEgg.jpg',
 		alt: 'A ham, egg, spinach and cheese crepe with hollandaise.',
-		title: 'Ham Egg Spinach & Cheese w/ Hollandaise',
+		title: 'The Egg',
 	}
 
-	const blackBean = {
-		src: '../images/crepe_blackBean.jpg',
+	const theBlackBean = {
+		src: '../images/crepe_theBlackBean.jpg',
 		alt: 'A black bean and avacado crepe.',
-		title: 'Black bean & Avacado',
+		title: 'The Black Bean',
 	}
 
-	const allAmerican = {
-		src: '../images/crepe_allAmerican.jpg',
+	const theAllAmerican = {
+		src: '../images/crepe_theAllAmerican.jpg',
 		alt: 'An egg, sausage and country gravy crepe.',
-		title: 'All American',
+		title: 'The All American',
 	}
+
+	const theChicken = {
+		src: '../images/crepe_theAllAmerican.jpg',
+		alt: 'A chicken, spinach and provolone crepe.',
+		title: 'The Chicken',
+	}
+
+	const theMonteCristo = {
+		src: '../images/crepe_theAllAmerican.jpg',
+		alt: 'An egg, ham, turkey, cheddar, provolone, topped with raspberry and powdered sugar crepe.',
+		title: 'The Monte Cristo',
+	}
+
+	const theTurkeyBacon = {
+		src: '../images/crepe_theAllAmerican.jpg',
+		alt: 'A turkey, bacon, provolone, tomato, spinach, topped with ranch crepe.',
+		title: 'The Turkey Bacon',
+	}
+
+	const theBreakfastInBed = {
+		src: '../images/crepe_theAllAmerican.jpg',
+		alt: 'A egg, bacon, maple sausage, cheddar cheese, topped with maple syrup crepe.',
+		title: 'The Breakfast in Bed',
+	}
+
 </script>
 
 <svelte:head>
@@ -107,29 +132,41 @@
 <div>
 	<div id='sweet' class='cards'>
 		<div class='card'>
-			<MenuCard {...lemonSugar} />
+			<MenuCard {...theLemon} />
 		</div>
 		<div class='card'>
-			<MenuCard {...peanutBanana} />
+			<MenuCard {...thePeanutButter} />
 		</div>
 		<div class='card'>
-			<MenuCard {...chocolateRaspberry} />
+			<MenuCard {...theChocolate} />
 		</div>
 		<div class='card'>
-			<MenuCard {...strawberryNutella} />
+			<MenuCard {...theNutella} />
 		</div>
 		<div class='empty-card'></div>
 		<div class='empty-card'></div>
 	</div>
 	<div id='savory' class='cards'>
 		<div class='card'>
-			<MenuCard {...hamHollandaise} />
+			<MenuCard {...theEgg} />
 		</div>
 		<div class='card'>
-			<MenuCard {...blackBean} />
+			<MenuCard {...theBlackBean} />
 		</div>
 		<div class='card'>
-			<MenuCard {...allAmerican} />
+			<MenuCard {...theAllAmerican} />
+		</div>
+		<div class='card'>
+			<MenuCard {...theChicken} />
+		</div>
+		<div class='card'>
+			<MenuCard {...theMonteCristo} />
+		</div>
+		<div class='card'>
+			<MenuCard {...theTurkeyBacon} />
+		</div>
+		<div class='card'>
+			<MenuCard {...theBreakfastInBed} />
 		</div>
 		<div class='empty-card'></div>
 	</div>
