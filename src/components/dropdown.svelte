@@ -4,17 +4,16 @@
     import DropdownItem from './dropdownItem.svelte';
     import { dropdownOpen } from '../store';
     import { slide } from 'svelte/transition';
-	import { sineIn } from 'svelte/easing';
-
-    let dropdownOpen_value = false;
-
-    const unsubscribe = dropdownOpen.subscribe(value => {
-		dropdownOpen_value = value;
-    });
+    import { sineIn } from 'svelte/easing';
     
+    //renaming store value to make markup more concise (ie. class:active)
+    $: active = $dropdownOpen; 
+
+    //toggle dropdown status on click
     function toggle() {
         dropdownOpen.update(value => !value);
     }
+
 </script>
 
 <style>
@@ -52,7 +51,7 @@
     
 </style>
 
-{#if dropdownOpen_value}
+{#if $dropdownOpen}
     <li>
         <button on:click={toggle}><Icon data={bars} scale='2'/></button>
         <div in:slide="{{duration: 500, easing: sineIn }}">
