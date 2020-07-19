@@ -39,12 +39,12 @@
 
 {#if mobile}
 <nav>
-  <Logo image="🍓" {title} />
+  <Logo {title} />
   <Dropdown />
 </nav>
 {:else}
 <nav>
-  <Logo image="🍓" {title} />
+  <Logo {title} />
   <NavItem title="Menu" route='/menu'/>
   <NavItem title="Locations" route='/locations'/>
   <NavItem title="About Us" route='/about'/>
