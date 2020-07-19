@@ -45,7 +45,7 @@
         width:100%;
         height: calc(100% - 80px);
         box-sizing: border-box;
-        border-top: 2px black solid;
+        border-top: 1px black solid;
         background-color: white;
     }
     
