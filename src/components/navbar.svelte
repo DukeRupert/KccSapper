@@ -15,6 +15,7 @@
 
 <style>
   nav {
+    position: relative;
     height: 80px;
     background-color: white;
     color: black;
@@ -23,7 +24,7 @@
     padding: 10px;
     box-sizing: border-box;
     justify-content: flex-end;
-    box-shadow: 0 4px 2px -2px gray;
+    box-shadow: rgba(60, 60, 59, 0.75) 0 0 10px;
     z-index: 101;
   }
 

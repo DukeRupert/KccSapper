@@ -15,6 +15,8 @@
 
 <style>
   nav {
+    position: absolute;
+    top: 80px;
     height: 80px;
     background-color: white;
     color: black;
@@ -22,9 +24,9 @@
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    justify-content: flex-end;
-    box-shadow: 0 4px 2px -2px gray;
-    z-index: 101;
+    justify-content: center;
+    box-shadow: rgba(59, 59, 58, 0.5) 0 0 10px;
+    z-index: 100;
   }
 
   @media only screen and (max-width: 655px) {
@@ -44,7 +46,6 @@
 </nav>
 {:else}
 <nav>
-  <Logo {title} />
   <NavItem title="Menu" route='/menu'/>
   <NavItem title="Locations" route='/locations'/>
   <NavItem title="About Us" route='/about'/>

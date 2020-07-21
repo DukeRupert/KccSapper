@@ -1,4 +1,5 @@
 <script>
+	import MenuNavbar from '../components/menuNavbar.svelte'
 	import MenuCard from '../components/menuCard.svelte'
 
 	const theLemon = {
@@ -78,6 +79,7 @@
 	div {
 		width: 100%;
 		height: 100%;
+		margin-top: 40px;
 		padding-right: 5%; 
 		padding-left: 5%;
 	}
@@ -98,7 +100,7 @@
 		width: 25vw;
 		margin: 1%;
 		padding: 20px;
-		background-color: white;
+		background-color: #ffffff;
 
 		display: flex;
 		flex-direction: column;
@@ -129,6 +131,7 @@
   }
 </style>
 
+<MenuNavbar />
 <div>
 	<div id='sweet' class='cards'>
 		<div class='card'>
