@@ -9,7 +9,7 @@
 	};
 
 	const thePeanutButter = {
-		src: '../images/crepe_PeanutButterBanana.jpg',
+		src: '../images/crepe_thePeanutButter.jpg',
 		alt: 'A peanut butter and banana crepe.',
 		title: 'The Peanut Butter ',
 	}
