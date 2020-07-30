@@ -172,5 +172,6 @@
 			<MenuCard {...theBreakfastInBed} />
 		</div>
 		<div class='empty-card'></div>
+		<div class='empty-card'></div>
 	</div>
 </div>
