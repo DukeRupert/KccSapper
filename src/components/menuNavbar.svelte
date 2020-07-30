@@ -1,16 +1,5 @@
 <script>
-  import Logo from "./logo.svelte";
   import NavItem from "./navItem.svelte";
-  import Dropdown from './dropdown.svelte'
-  let title = "Kagens Coffee & Crepes";
-  let width;
-  let mobile = false;
-  $: if (width < 655) {
-    mobile = true;
-  }
-  else {
-    mobile = false;
-  }
 </script>
 
 <style>
@@ -37,18 +26,8 @@
   }
 </style>
 
-<svelte:window bind:innerWidth={width}/>
 
-{#if mobile}
 <nav>
-  <Logo {title} />
-  <Dropdown />
+  <NavItem title="Sweet" route='/menu#sweet'/>
+  <NavItem title="Savory" route='/menu#savory' />
 </nav>
-{:else}
-<nav>
-  <NavItem title="Menu" route='/menu'/>
-  <NavItem title="Locations" route='/locations'/>
-  <NavItem title="About Us" route='/about'/>
-  <NavItem title="Order Online" route='/test'/>
-</nav>
-{/if}
