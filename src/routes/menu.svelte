@@ -84,6 +84,10 @@
 		padding-left: 5%;
 	}
 
+	:target {
+		scroll-margin-top: 0px;
+	}	
+
 	.cards {
 		display: flex;
 		flex-wrap: wrap;
@@ -119,6 +123,10 @@
 
 
   @media only screen and (max-width: 655px) {
+
+	:target {
+		scroll-margin-top: 160px;
+	}
 
 	.cards {
 		justify-content: center;
