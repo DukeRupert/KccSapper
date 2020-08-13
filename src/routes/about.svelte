@@ -1,3 +1,7 @@
+<script>
+  import Image from "svelte-image";
+</script>
+
 <svelte:head>
 	<title>About Us</title>
 </svelte:head>
@@ -17,11 +21,10 @@
 		font-size: 17px;
 	}
 
-	img {
-		width: 30vw;
+	:global(.portrait) {
 		border-radius: 50%;
 		align-self: center;
-		margin-top: 0.67em;
+		max-width: 60vw;
 	}
 
 	@media only screen and (max-width: 655px) {
@@ -36,10 +39,6 @@
 	
 	p {
 		font-size: 14px;
-	}
-
-	img {
-		width: 60vw;
 	}
 
 }
@@ -64,5 +63,6 @@
 		Keep following us here, Facebook, and Instagram to see our future growth
 		plans!
 	</p>
-	<img src='../images/kagen_small.jpg' alt='A photo of Kagen Cox'>
+	<Image class='portrait' wrapperClass='portrait' placeholderClass='portrait' src='images/portraitKagen.jpg' alt='A photo of Kagen Cox' />
+
 </div>

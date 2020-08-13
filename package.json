@@ -35,6 +35,7 @@
     "sapper": "^0.27.0",
     "svelte": "^3.0.0",
     "svelte-awesome": "^2.3.0",
-    "svelte-fa": "^2.1.1"
+    "svelte-fa": "^2.1.1",
+    "svelte-image": "^0.2.6"
   }
 }

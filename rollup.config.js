@@ -7,6 +7,7 @@ import { terser } from 'rollup-plugin-terser';
 import json from '@rollup/plugin-json';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
+import image from "svelte-image";
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -27,6 +28,11 @@ export default {
 				dev,
 				hydratable: true,
 				emitCss: true,
+				preprocess: {
+					...image({
+						placeholder: 'blur', // or trace
+					}),
+				}	
 			}),
 			resolve({
 				browser: true,
