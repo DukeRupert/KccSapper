@@ -1,12 +1,10 @@
 <script>
 	import Navbar from "../components/navbar.svelte";
-	import Banner from "../components/banner.svelte";
+	import BannerMenu from '../components/bannerMenu.svelte';
+	import BannerLocations from '../components/bannerLocations.svelte';
+	import BannerOrder from '../components/bannerOrder.svelte';
 	import Instagram from '../components/instagram.svelte';
 	import Footer from '../components/footer.svelte';
-
-	let title = "Kagen's Coffee & Crepes";
-	let src = "/build/images/crepeBanana.jpg";
-	export let ready;
 </script>
 	  
 <style>
@@ -24,9 +22,9 @@
 </style>
 	  
 <main>
-	<Banner label='MENU' route='/menu' src="images/crepe_strawberry.jpg" alt='A banana crepe' right />
-	<Banner label='LOCATIONS' route='/locations' src="images/latte_large.jpg" alt='A latte' left />
-	<Banner label='ORDER ONLINE' route='/' src="images/crepe_ham.jpg" alt='A chocolate crepe' right />
+	<BannerMenu label='MENU' route='/menu' right />
+	<BannerLocations label='LOCATIONS' route='/locations' left />
+	<BannerOrder label='ORDER ONLINE' route='/' right />
 	<Instagram />
 	<Footer />
 </main>

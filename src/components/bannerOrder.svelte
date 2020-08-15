@@ -1,18 +1,18 @@
 <script>
   export let label = '';
   export let route = '';
-  export let src = '';
-  export let alt = '';
   export let left = false;
   export let right = false;
+  import Image from "svelte-image";
 </script>
 
 <style>
-  .banner {
+  div {
     position: relative;
+    width: 100%;
   }
 
-  img {
+  :global(.banner) {
     display: block;
     max-width: 100%;
   }
@@ -91,8 +91,14 @@
   }
 </style>
 
-<div class="banner">
-  <img {src} alt={alt} />
+<div>
+  <Image 
+    src='images/crepe_ham.jpg' 
+    alt='A chocolate crepe' 
+    class="banner" 
+    wrapperClass="banner" 
+    placeholderClass="banner"
+  />
   <a class:left class:right href={route}>
     <p>{label}</p>
   </a>

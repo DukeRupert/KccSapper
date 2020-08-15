@@ -24,7 +24,7 @@
 	:global(.portrait) {
 		border-radius: 50%;
 		align-self: center;
-		max-width: 60vw;
+		max-width: 30vw;
 	}
 
 	@media only screen and (max-width: 655px) {
@@ -39,6 +39,10 @@
 	
 	p {
 		font-size: 14px;
+	}
+
+	:global(.portrait) {
+		max-width: 60vw;
 	}
 
 }
@@ -63,6 +67,12 @@
 		Keep following us here, Facebook, and Instagram to see our future growth
 		plans!
 	</p>
-	<Image class='portrait' wrapperClass='portrait' placeholderClass='portrait' src='images/portraitKagen.jpg' alt='A photo of Kagen Cox' />
+	<Image 
+		class='portrait' 
+		wrapperClass='portrait' 
+		placeholderClass='portrait' 
+		src='images/portraitKagen.jpg' 
+		alt='A photo of Kagen Cox' 
+	/>
 
 </div>
