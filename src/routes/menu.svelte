@@ -85,7 +85,7 @@
 	}
 
 	:target {
-		scroll-margin-top: 0px;
+		scroll-margin-top: 160px;
 	}	
 
 	.cards {
