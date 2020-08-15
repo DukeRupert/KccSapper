@@ -1,8 +1,9 @@
 <script>
-	import Map from '../components/map.svelte'
-	import MapCard from '../components/mapCard.svelte'
-	let uptown = '270 Williams Boulevard <br /> Richland, WA 99354'
-	let pnnl = '2475 Stevens Drive <br /> Richland, WA 99354'
+	import Map from '../components/map.svelte';
+	import MapCard from '../components/mapCard.svelte';
+	let uptown = '270 Williams Boulevard <br /> Richland, WA 99354';
+	let pnnl = '2475 Stevens Drive <br /> Richland, WA 99354';
+	import Image from 'svelte-image';
 </script>
 
 <svelte:head>
@@ -47,17 +48,22 @@
 	}
 
 	.banner {
-		height: 25vh;
+		position: relative;
 		width: 100%;
-		background-image: url('../images/banner_crepe_savory.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: 50% 40%;
-		filter: grayscale(0.2);
+	}
 
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	.banner-text {
+		position: absolute;
+		display: inline-block;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		padding: 5px;
+		padding-right: 2rem;
+		padding-left: 2rem;
+		border-radius: 40px;
+		color: #fcc24c;
+		background-color: rgba(0, 0, 0, 0.5);
 	}
 
   @media only screen and (max-width: 655px) {
@@ -77,25 +83,19 @@
 	.cards {
 		padding: 2em;
 	}
-
-	.banner {
-		height: 15vh;
-		background-position: 60% 0;
-	}
 }
 </style>
 
 <div>
 	<div class='banner'>
-		<h1>
-				LOCATIONS
-		</h1>
+		<Image src='images/espresso.jpg' alt='A black and white picture of a steaming espresso machine.' />
+		<h1 class='banner-text'>LOCATIONS</h1> 
 	</div>
 	<div class='cards'>
 		<div class='card'>
 			<MapCard 
 				link='https://www.google.com/maps/place/270+Williams+Blvd,+Richland,+WA+99354/' 
-				image='https://maps.googleapis.com/maps/api/staticmap?center=270+Williams+Blvd,+Richland,+WA+99354&zoom=18&scale=false&size=500x500&maptype=roadmap&key=AIzaSyDHsJtQBjSzsLPwckAWjEPymWqY-zZtFOw&format=png&visual_refresh=true'
+				image='https://maps.googleapis.com/maps/api/staticmap?center=270+Williams+Blvd,+Richland,+WA+99354&zoom=18&scale=false&size=500x500&maptype=roadmap&key=AIzaSyDHsJtQBjSzsLPwckAWjEPymWqY-zZtFOw&map_id=cef788b41fcab785'
 				alt='Google Map of 270 Williams Blvd, Richland, WA 99354' 
 				title='UPTOWN KAGENS'
 				address={uptown}
@@ -106,7 +106,7 @@
 		<div class='card'>
 				<MapCard 
 					link='https://www.google.com/maps/place/902+Battelle+Blvd,+Richland,+WA+99354/' 
-					image='https://maps.googleapis.com/maps/api/staticmap?center=902+Battelle+Blvd,+Richland,+WA+99354&zoom=16&scale=false&size=500x500&maptype=roadmap&key=AIzaSyDHsJtQBjSzsLPwckAWjEPymWqY-zZtFOw&format=png&visual_refresh=true'
+					image='https://maps.googleapis.com/maps/api/staticmap?center=902+Battelle+Blvd,+Richland,+WA+99354&zoom=16&scale=false&size=500x500&maptype=roadmap&key=AIzaSyDHsJtQBjSzsLPwckAWjEPymWqY-zZtFOw&map_id=d6fafe2bc3c4597b'
 					alt='Google Map of 902 Battelle Blvd, Richland, WA 99354'
 					title='PNNL KAGENS'
 					address={pnnl}
