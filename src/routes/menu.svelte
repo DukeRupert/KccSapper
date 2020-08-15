@@ -76,7 +76,7 @@
 
 <style>
 	
-	div {
+	.card-container {
 		width: 100%;
 		height: 100%;
 		margin-top: 40px;
@@ -84,14 +84,15 @@
 		padding-left: 5%;
 	}
 
-	:target {
-		scroll-margin-top: 160px;
-	}	
+	/* :target {
+		scroll-margin-top: 0px;
+	}	 */
 
 	.cards {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
+		margin-top: 40px;
 		padding-top: 2%;
 		padding-right: 0; 
 		padding-left: 0;
@@ -124,9 +125,9 @@
 
   @media only screen and (max-width: 655px) {
 
-	:target {
+	/* :target {
 		scroll-margin-top: 160px;
-	}
+	} */
 
 	.cards {
 		justify-content: center;
@@ -140,8 +141,9 @@
 </style>
 
 <MenuNavbar />
-<div>
-	<div id='sweet' class='cards'>
+<div class='card-container'>
+	<div id='sweet' />
+	<div class='cards'>
 		<div class='card'>
 			<MenuCard {...theLemon} />
 		</div>
@@ -157,7 +159,8 @@
 		<div class='empty-card'></div>
 		<div class='empty-card'></div>
 	</div>
-	<div id='savory' class='cards'>
+	<div id='savory' />
+	<div class='cards'>
 		<div class='card'>
 			<MenuCard {...theEgg} />
 		</div>
