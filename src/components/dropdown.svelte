@@ -21,21 +21,9 @@
     li {
         display: flex;
         align-items: center;
-        margin-left: 20px;
-        margin-right: 20px;
         font-size: 17px;
     }
 
-    button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: none;
-        padding: 0;
-        margin: 0;
-        background-color: rgba(1, 1, 1, 0);
-        transition: filter 300ms;
-    }
     div {
         position: fixed;
         overflow: hidden;
@@ -50,19 +38,20 @@
     }
     
 </style>
-
-{#if $dropdownOpen}
+    
+        <!-- <button on:click={toggle}><Icon data={bars} scale='2'/></button> -->
+<button on:click={toggle} class="hamburger hamburger--spin {active ? 'is-active' : ''}" type="button">
+<span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+</span>
+</button>  
+{#if active}
     <li>
-        <button on:click={toggle}><Icon data={bars} scale='2'/></button>
         <div in:slide="{{duration: 500, easing: sineIn }}">
             <DropdownItem title='MENU' route='/menu' onClick={toggle}/>
             <DropdownItem title='LOCATIONS' route='/locations' onClick={toggle}/>
             <DropdownItem title='ABOUT US' route='/about' onClick={toggle}/>
             <DropdownItem title='ORDER ONLINE' route='/menu' onClick={toggle}/>
         </div>
-    </li>
-{:else}
-    <li>
-        <button on:click={toggle}><Icon data={bars} scale='2'/></button>
     </li>
 {/if}
