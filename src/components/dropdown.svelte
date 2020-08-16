@@ -4,7 +4,7 @@
     import DropdownItem from './dropdownItem.svelte';
     import { dropdownOpen } from '../store';
     import { slide } from 'svelte/transition';
-    import { sineIn } from 'svelte/easing';
+    import { quadOut } from 'svelte/easing';
     
     //renaming store value to make markup more concise (ie. class:active)
     $: active = $dropdownOpen; 
@@ -33,7 +33,9 @@
         width:100%;
         height: calc(100% - 80px);
         box-sizing: border-box;
-        border-top: 1px black solid;
+        /* border-top: 1px black solid; */
+        box-shadow: rgba(60, 60, 59, 0.75) 0 10px 12px -10px inset;
+
         background-color: white;
     }
     
@@ -47,7 +49,7 @@
 </button>  
 {#if active}
     <li>
-        <div in:slide="{{duration: 500, easing: sineIn }}">
+        <div transition:slide="{{duration: 500, easing: quadOut }}">
             <DropdownItem title='MENU' route='/menu' onClick={toggle}/>
             <DropdownItem title='LOCATIONS' route='/locations' onClick={toggle}/>
             <DropdownItem title='ABOUT US' route='/about' onClick={toggle}/>
