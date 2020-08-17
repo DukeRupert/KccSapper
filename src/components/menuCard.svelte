@@ -1,7 +1,5 @@
 <script>
     import { slide, fade } from 'svelte/transition';
-    import { linear, quintOut } from 'svelte/easing';
-
 
     export let src;
     export let alt='';
@@ -36,23 +34,15 @@
 <h1>{title}</h1>
 <button on:click={toggleIngredients}>INGREDIENTS <Fa class= 'icon' icon={iStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" /></button>
     {#if ingredientsToggle }
-        <div transition:slide="{{duration: 300, easing: linear }}">
-            <p >Ingredient #1</p>
-            <p >Ingredient #2</p>
-            <p >Ingredient #3</p>
-        </div>
+        <p transition:slide>Ingredient #1 <br /> Ingredient #2 <br /> Ingredient #3</p>
     {/if}
 <button on:click={toggleNutrition}>NUTRITIONAL INFO <Fa class= 'icon' icon={nStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" /></button>
     {#if nutritionToggle }
-        <div transition:slide>
-            <p>Nutrition #1</p>
-            <p>Nutrition #2</p>
-            <p>Nutrition #3</p>
-        </div>
+        <p transition:slide>Nutrition #1 <br /> Nutrition #2 <br /> Nutrition #3</p>
     {/if}
 <button on:click={toggleAllergens}>ALLERGENS <Fa class= 'icon' icon={aStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" /></button>
     {#if allergensToggle }
-            <p transition:slide>Allergen #1 <br /> Allergen #2 <br /> Allergen #2</p>
+        <p transition:slide>Allergen #1 <br /> Allergen #2 <br /> Allergen #3</p>
     {/if}
 
 
