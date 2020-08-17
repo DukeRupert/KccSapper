@@ -79,62 +79,34 @@
 	.card-container {
 		width: 100%;
 		height: 100%;
-		margin-top: 80px;
-		padding-right: 5%; 
-		padding-left: 5%;
-	}
-
-	/* :target {
-		scroll-margin-top: 0px;
-	}	 */
-
-	.cards {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		margin-top: 40px;
-		padding-top: 2%;
-		padding-right: 0; 
-		padding-left: 0;
-		font-size: 1em;
+		margin-top: 120px;
+		padding: 0 5%;
 		text-align: left;
 	}
 
 	.card {
-		flex: 0 0 auto;
+		display: inline-block;
 		width: 25vw;
-		margin: 1%;
-		padding: 20px;
-		background-color: #ffffff;
-
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: flex-start;
+		vertical-align: top;
+		text-align: left;
+		margin: 0 2% 40px 3%;
 	}
-
-	/* Empty card created to create an align-left effect on the the last card element*/
-	.empty-card {
-		width: 25vw;
-		/*0 height allows the row to collapse if necessary*/
-		height: 0;
-		margin: 1%;
-		padding: 20px;
+	
+	:target {
+		scroll-margin-top: 40px;
 	}
 
 
   @media only screen and (max-width: 655px) {
 
-	/* :target {
-		scroll-margin-top: 160px;
-	} */
-
-	.cards {
-		justify-content: center;
+	.card-container {
+		text-align: center;
 	}
 
 	.card {
 		width: 60vw;
+		text-align: center;
+		margin: 0 auto 40px auto;
 	}
 
   }
@@ -156,8 +128,6 @@
 		<div class='card'>
 			<MenuCard {...theNutella} />
 		</div>
-		<div class='empty-card'></div>
-		<div class='empty-card'></div>
 	</div>
 	<section id='savory' />
 	<div class='cards'>
@@ -182,7 +152,5 @@
 		<div class='card'>
 			<MenuCard {...theBreakfastInBed} />
 		</div>
-		<div class='empty-card'></div>
-		<div class='empty-card'></div>
 	</div>
 </div>

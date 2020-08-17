@@ -36,7 +36,7 @@
 <h1>{title}</h1>
 <button on:click={toggleIngredients}>INGREDIENTS <Fa class= 'icon' icon={iStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" /></button>
     {#if ingredientsToggle }
-        <div in:slide="{{delay: 250, duration: 300, easing: quintOut }}">
+        <div transition:slide="{{duration: 300, easing: quintOut }}">
             <p >Ingredient #1</p>
             <p >Ingredient #2</p>
             <p >Ingredient #3</p>
@@ -44,7 +44,7 @@
     {/if}
 <button on:click={toggleNutrition}>NUTRITIONAL INFO <Fa class= 'icon' icon={nStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" /></button>
     {#if nutritionToggle }
-        <div in:slide>
+        <div transition:slide>
             <p>Nutrition #1</p>
             <p>Nutrition #2</p>
             <p>Nutrition #3</p>
@@ -52,7 +52,7 @@
     {/if}
 <button on:click={toggleAllergens}>ALLERGENS <Fa class= 'icon' icon={aStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" /></button>
     {#if allergensToggle }
-        <div in:slide>
+        <div transition:slide>
             <p>Allergen #1</p>
             <p>Allergen #2</p>
             <p>Allergen #3</p>
@@ -61,6 +61,10 @@
 
 
 <style>
+    div {
+        display: block;
+    }
+
     img {
     width: 100%;
     height: 100%;
@@ -77,6 +81,7 @@
     }
 
     button {
+        display: block;
         color: gray;
         background: none;
         border: none;
@@ -90,5 +95,11 @@
         font-size: 1em;
         margin: 0px;
         padding-left: 0.5em;
+    }
+
+    @media only screen and (max-width: 655px) {
+        button {
+            margin: 0.5em auto 0;
+        }
     }
 </style>
