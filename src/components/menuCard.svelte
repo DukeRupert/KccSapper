@@ -1,6 +1,6 @@
 <script>
     import { slide, fade } from 'svelte/transition';
-    import { quintOut } from 'svelte/easing';
+    import { linear, quintOut } from 'svelte/easing';
 
 
     export let src;
@@ -36,7 +36,7 @@
 <h1>{title}</h1>
 <button on:click={toggleIngredients}>INGREDIENTS <Fa class= 'icon' icon={iStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" /></button>
     {#if ingredientsToggle }
-        <div transition:slide="{{duration: 300, easing: quintOut }}">
+        <div transition:slide="{{duration: 300, easing: linear }}">
             <p >Ingredient #1</p>
             <p >Ingredient #2</p>
             <p >Ingredient #3</p>
@@ -52,11 +52,7 @@
     {/if}
 <button on:click={toggleAllergens}>ALLERGENS <Fa class= 'icon' icon={aStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" /></button>
     {#if allergensToggle }
-        <div transition:slide>
-            <p>Allergen #1</p>
-            <p>Allergen #2</p>
-            <p>Allergen #3</p>
-        </div>
+            <p transition:slide>Allergen #1 <br /> Allergen #2 <br /> Allergen #2</p>
     {/if}
 
 
