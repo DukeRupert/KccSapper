@@ -79,7 +79,7 @@
 	.card-container {
 		width: 100%;
 		height: 100%;
-		margin-top: 40px;
+		margin-top: 80px;
 		padding-right: 5%; 
 		padding-left: 5%;
 	}
@@ -142,7 +142,7 @@
 
 <MenuNavbar />
 <div class='card-container'>
-	<div id='sweet' />
+	<section id='sweet' />
 	<div class='cards'>
 		<div class='card'>
 			<MenuCard {...theLemon} />
@@ -159,7 +159,7 @@
 		<div class='empty-card'></div>
 		<div class='empty-card'></div>
 	</div>
-	<div id='savory' />
+	<section id='savory' />
 	<div class='cards'>
 		<div class='card'>
 			<MenuCard {...theEgg} />
