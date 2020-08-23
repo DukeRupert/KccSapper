@@ -6,6 +6,8 @@
 		src: '../images/crepe_theLemon.jpg', 
 		alt: 'A lemon sugar crepe.',
 		title: 'The Lemon',
+		ingredients: ['flour', 'milk', 'sugar'],
+		nutrition: ['Sugar 4g', 'Fat 2g']
 	};
 
 	const thePeanutButter = {

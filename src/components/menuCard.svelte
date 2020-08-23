@@ -4,9 +4,8 @@
     export let src;
     export let alt='';
     export let title='';
-    export let ingredients='';
-    export let nutrition='';
-    export let allergens='';
+    export let ingredients=['Coming soon'];
+    export let nutrition=['Coming soon'];
 
     let ingredientsToggle = false;
     $: iStatus = ingredientsToggle; // reactive toggle to update caret orientation
@@ -34,11 +33,19 @@
 <h1>{title}</h1>
 <button on:click={toggleIngredients}>INGREDIENTS <Fa class= 'icon' icon={iStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" /></button>
     {#if ingredientsToggle }
-        <p transition:slide>Ingredient #1 <br /> Ingredient #2 <br /> Ingredient #3</p>
+        <p transition:slide>
+            {#each ingredients as ingredient}
+               {ingredient} <br> 
+            {/each}
+        </p>
     {/if}
 <button on:click={toggleNutrition}>NUTRITIONAL INFO <Fa class= 'icon' icon={nStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" /></button>
     {#if nutritionToggle }
-        <p transition:slide>Nutrition #1 <br /> Nutrition #2 <br /> Nutrition #3</p>
+        <p transition:slide> 
+            {#each nutrition as fact}
+                {fact} <br>
+            {/each}
+        </p>
     {/if}
 <!-- <button on:click={toggleAllergens}>ALLERGENS <Fa class= 'icon' icon={aStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" /></button>
     {#if allergensToggle }
