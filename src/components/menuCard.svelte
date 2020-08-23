@@ -40,16 +40,13 @@
     {#if nutritionToggle }
         <p transition:slide>Nutrition #1 <br /> Nutrition #2 <br /> Nutrition #3</p>
     {/if}
-<button on:click={toggleAllergens}>ALLERGENS <Fa class= 'icon' icon={aStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" /></button>
+<!-- <button on:click={toggleAllergens}>ALLERGENS <Fa class= 'icon' icon={aStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" /></button>
     {#if allergensToggle }
         <p transition:slide>Allergen #1 <br /> Allergen #2 <br /> Allergen #3</p>
-    {/if}
+    {/if} -->
 
 
 <style>
-    div {
-        display: block;
-    }
 
     img {
     width: 100%;

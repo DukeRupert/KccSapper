@@ -20,7 +20,7 @@
   .links {
     width: 50%;
     margin: 0;
-    padding: 0;
+    padding: 0 2%;
     box-sizing: border-box;
 
     display: flex;

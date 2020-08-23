@@ -11,7 +11,7 @@
 	main {
 		text-align: center;
 		padding: 0px;
-		max-width: 100%;
+		width: 100%;
 		height: 100%;
 		margin: 0 auto;
 		display: flex;
@@ -25,6 +25,6 @@
 	<BannerMenu label='MENU' route='/menu' right />
 	<BannerLocations label='LOCATIONS' route='/locations' left />
 	<BannerOrder label='ORDER ONLINE' route='/' right />
-	<Instagram />
+	<!-- <Instagram /> -->
 	<Footer />
 </main>
