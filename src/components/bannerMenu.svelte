@@ -93,8 +93,8 @@
 
 <div>
   <Image 
-    src='images/crepe_strawberry.jpg' 
-    alt='A strawberry crepe' 
+    src='images/crepe_ham.jpg' 
+    alt='A ham and cheese crepe.' 
     class="banner" 
     wrapperClass="banner" 
     placeholderClass="banner"

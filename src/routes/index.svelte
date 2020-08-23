@@ -18,13 +18,14 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
+		background-color: black;
 	}
 </style>
 	  
 <main>
-	<BannerMenu label='MENU' route='/menu' right />
-	<BannerLocations label='LOCATIONS' route='/locations' left />
 	<BannerOrder label='ORDER ONLINE' route='/' right />
+	<BannerLocations label='LOCATIONS' route='/locations' left />
+	<BannerMenu label='MENU' route='/menu' right />
 	<!-- <Instagram /> -->
 	<Footer />
 </main>
