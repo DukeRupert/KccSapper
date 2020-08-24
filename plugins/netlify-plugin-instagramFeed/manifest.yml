@@ -1,6 +1,0 @@
-# manifest.yml
-
-name: firefly-kcc-instagram
-inputs:
-  - name: instagramKey
-    description: Instagram api key for KCC
