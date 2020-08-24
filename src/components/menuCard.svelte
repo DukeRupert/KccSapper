@@ -7,26 +7,24 @@
     export let ingredients=['Coming soon'];
     export let nutrition=['Coming soon'];
 
+    // controls for ingredients dropdown list
     let ingredientsToggle = false;
     $: iStatus = ingredientsToggle; // reactive toggle to update caret orientation
     function toggleIngredients() {
         ingredientsToggle = !ingredientsToggle;
     }
 
+    // controls for nutrition dropdown list
     let nutritionToggle = false;
     $: nStatus = nutritionToggle; // reactive toggle to update caret orientation
     function toggleNutrition() {
         nutritionToggle = !nutritionToggle;
     }
 
-    let allergensToggle = false;
-    $: aStatus = allergensToggle; // reactive toggle to update caret orientation
-    function toggleAllergens() {
-        allergensToggle = !allergensToggle;
-    }
-
+    //imports for fontawesome caret symbols used in dropdown menu
     import Fa from 'svelte-fa'
     import { faCaretUp, faCaretDown } from '@fortawesome/free-solid-svg-icons'
+    
 </script>
 
 <img {src} alt={alt} in:fade>
@@ -47,11 +45,6 @@
             {/each}
         </p>
     {/if}
-<!-- <button on:click={toggleAllergens}>ALLERGENS <Fa class= 'icon' icon={aStatus ? faCaretUp : faCaretDown} primaryColor="darkgrey" /></button>
-    {#if allergensToggle }
-        <p transition:slide>Allergen #1 <br /> Allergen #2 <br /> Allergen #3</p>
-    {/if} -->
-
 
 <style>
 
