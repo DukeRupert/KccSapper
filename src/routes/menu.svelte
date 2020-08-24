@@ -6,7 +6,7 @@
 		src: '../images/crepe_theLemon.jpg', 
 		alt: 'A lemon sugar crepe.',
 		title: 'The Lemon',
-		ingredients: ['eggs', 'dairy', 'flour'],
+		ingredients: ['lemon', 'sugar', 'eggs', 'dairy', 'flour'],
 		// nutrition: ['Sugar 4g', 'Fat 2g']
 	};
 
@@ -14,7 +14,7 @@
 		src: '../images/crepe_thePeanutButter.jpg',
 		alt: 'A peanut butter and banana crepe.',
 		title: 'The Peanut Butter ',
-		ingredients: ['eggs', 'dairy', 'flour'],
+		ingredients: ['peanut butter', 'banana', 'eggs', 'dairy', 'flour'],
 		// nutrition: ['Sugar 4g', 'Fat 2g']
 		
 	}
@@ -23,7 +23,7 @@
 		src: '../images/crepe_theChocolate.jpg',
 		alt: 'A chocolate raspberry crepe.',
 		title: 'The Chocolate',
-		ingredients: ['eggs', 'dairy', 'flour'],
+		ingredients: ['chocolate', 'raspberry', 'eggs', 'dairy', 'flour'],
 		// nutrition: ['Sugar 4g', 'Fat 2g']
 	}
 
@@ -31,65 +31,82 @@
 		src: '../images/crepe_theNutella.jpg',
 		alt: 'A strawberry and nutella crepe.',
 		title: 'The Nutella',
-		ingredients: ['eggs', 'dairy', 'flour'],
+		ingredients: ['Nutella', 'strawberry', 'eggs', 'dairy', 'flour'],
+		// nutrition: ['Sugar 4g', 'Fat 2g']
+	}
+
+	const theMixedBerry = {
+		src: '../images/crepe_theNutella.jpg',
+		alt: 'A mixed berry crepe.',
+		title: 'The Mixed Berry',
+		ingredients: ['cream cheese', 'strawberry', 'blueberries', 'eggs', 'dairy', 'flour'],
 		// nutrition: ['Sugar 4g', 'Fat 2g']
 	}
 
 	const theEgg = {
 		src: '../images/crepe_theEgg.jpg',
-		alt: 'A ham, egg, spinach and cheese crepe with hollandaise.',
+		alt: 'An egg crepe with hollandaise.',
 		title: 'The Egg',
-		ingredients: ['eggs', 'dairy', 'flour'],
+		ingredients: ['provolone', 'spinach', 'eggs', 'dairy', 'flour'],
 		// nutrition: ['Sugar 4g', 'Fat 2g']
 	}
 
 	const theBlackBean = {
 		src: '../images/crepe_theBlackBean.jpg',
-		alt: 'A black bean and avacado crepe.',
+		alt: 'A black bean crepe.',
 		title: 'The Black Bean',
-		ingredients: ['eggs', 'dairy', 'flour'],
+		ingredients: ['black bean', 'avocado', 'tomato', 'spinach', 'lime', 'salsa', 'eggs', 'dairy', 'flour'],
 		// nutrition: ['Sugar 4g', 'Fat 2g']
 	}
 
 	const theAllAmerican = {
 		src: '../images/crepe_theAllAmerican.jpg',
-		alt: 'An egg, sausage and country gravy crepe.',
+		alt: 'An All American crepe.',
 		title: 'The All American',
-		ingredients: ['eggs', 'dairy', 'flour'],
+		ingredients: ['gravy', 'bacon', 'cheddar', 'eggs', 'dairy', 'flour'],
 		// nutrition: ['Sugar 4g', 'Fat 2g']
 	}
 
 	const theChicken = {
 		src: '../images/crepe_theAllAmerican.jpg',
-		alt: 'A chicken, spinach and provolone crepe.',
+		alt: 'A chicken crepe.',
 		title: 'The Chicken',
-		ingredients: ['eggs', 'dairy', 'flour'],
+		ingredients: ['chicken', 'spinach', 'provolone', 'eggs', 'dairy', 'flour'],
 		// nutrition: ['Sugar 4g', 'Fat 2g']
 	}
 
 	const theMonteCristo = {
 		src: '../images/crepe_theAllAmerican.jpg',
-		alt: 'An egg, ham, turkey, cheddar, provolone, topped with raspberry and powdered sugar crepe.',
+		alt: 'A Monte Cristo crepe.',
 		title: 'The Monte Cristo',
-		ingredients: ['eggs', 'dairy', 'flour'],
+		ingredients: ['ham', 'turkey', 'provolone', 'cheddar', 'raspberry', 'eggs', 'dairy', 'flour'],
 		// nutrition: ['Sugar 4g', 'Fat 2g']
 	}
 
 	const theTurkeyBacon = {
 		src: '../images/crepe_theAllAmerican.jpg',
-		alt: 'A turkey, bacon, provolone, tomato, spinach, topped with ranch crepe.',
+		alt: 'A turkey bacon crepe.',
 		title: 'The Turkey Bacon',
-		ingredients: ['eggs', 'dairy', 'flour'],
+		ingredients: ['turkey', 'bacon', 'provolone', 'tomato', 'spinach', 'ranch', 'eggs', 'dairy', 'flour'],
 		// nutrition: ['Sugar 4g', 'Fat 2g']
 	}
 
 	const theBreakfastInBed = {
 		src: '../images/crepe_theAllAmerican.jpg',
-		alt: 'A egg, bacon, maple sausage, cheddar cheese, topped with maple syrup crepe.',
+		alt: 'A Breakfast in Bed crepe.',
 		title: 'The Breakfast in Bed',
-		ingredients: ['eggs', 'dairy', 'flour'],
+		ingredients: ['bacon', 'cheddar', 'maple sausage', 'maple syrup', 'eggs', 'dairy', 'flour'],
 		// nutrition: ['Sugar 4g', 'Fat 2g']
 	}
+
+	const theCaprese= {
+		src: '../images/crepe_theAllAmerican.jpg',
+		alt: 'A Caprese crepe.',
+		title: 'The Caprese',
+		ingredients: ['mozzarella', 'tomato', 'arugula', 'spinach', 'balsamic', 'eggs', 'dairy', 'flour'],
+		// nutrition: ['Sugar 4g', 'Fat 2g']
+	}
+
 
 </script>
 
@@ -151,6 +168,9 @@
 		<div class='card'>
 			<MenuCard {...theNutella} />
 		</div>
+		<div class='card'>
+			<MenuCard {...theMixedBerry} />
+		</div>
 	</div>
 	<section id='savory' />
 	<div class='cards'>
@@ -174,6 +194,9 @@
 		</div>
 		<div class='card'>
 			<MenuCard {...theBreakfastInBed} />
+		</div>
+		<div class='card'>
+			<MenuCard {...theCaprese} />
 		</div>
 	</div>
 </div>
