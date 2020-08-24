@@ -91,6 +91,14 @@
 		// nutrition: ['Sugar 4g', 'Fat 2g']
 	}
 
+	const theChipotleChicken = {
+		src: '../images/crepe_theAllAmerican.jpg',
+		alt: 'A chipotle chicken crepe.',
+		title: 'The Chipotle Chicken',
+		ingredients: ['chicken', 'cole slaw', 'tomato', 'chipotle ranch', 'eggs', 'dairy', 'flour'],
+		// nutrition: ['Sugar 4g', 'Fat 2g']
+	}
+	
 	const theBreakfastInBed = {
 		src: '../images/crepe_theAllAmerican.jpg',
 		alt: 'A Breakfast in Bed crepe.',
@@ -191,6 +199,9 @@
 		</div>
 		<div class='card'>
 			<MenuCard {...theTurkeyBacon} />
+		</div>
+		<div class='card'>
+			<MenuCard {...theChipotleChicken} />
 		</div>
 		<div class='card'>
 			<MenuCard {...theBreakfastInBed} />
