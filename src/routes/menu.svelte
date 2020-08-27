@@ -1,6 +1,7 @@
 <script>
 	import MenuNavbar from '../components/menuNavbar.svelte'
 	import MenuCard from '../components/menuCard.svelte'
+	import MenuItem from '../components/menuItem.svelte'
 
 	const theLemon = {
 		src: '../images/crepe_theLemon.jpg', 
@@ -68,7 +69,7 @@
 	}
 
 	const theChicken = {
-		src: '../images/crepe_theAllAmerican.jpg',
+		src: '../images/crepe_chicken.jpg',
 		alt: 'A chicken crepe.',
 		title: 'The Chicken',
 		ingredients: ['chicken', 'spinach', 'provolone', 'eggs', 'dairy', 'flour'],
@@ -84,7 +85,7 @@
 	}
 
 	const theTurkeyBacon = {
-		src: '../images/crepe_theAllAmerican.jpg',
+		src: '../images/crepe_turkeyBacon.jpg',
 		alt: 'A turkey bacon crepe.',
 		title: 'The Turkey Bacon',
 		ingredients: ['turkey', 'bacon', 'provolone', 'tomato', 'spinach', 'ranch', 'eggs', 'dairy', 'flour'],
@@ -107,15 +108,103 @@
 		// nutrition: ['Sugar 4g', 'Fat 2g']
 	}
 
-	const theCaprese= {
-		src: '../images/crepe_theAllAmerican.jpg',
+	const theCaprese = {
+		src: '../images/crepe_caprese.jpg',
 		alt: 'A Caprese crepe.',
 		title: 'The Caprese',
 		ingredients: ['mozzarella', 'tomato', 'arugula', 'spinach', 'balsamic', 'eggs', 'dairy', 'flour'],
 		// nutrition: ['Sugar 4g', 'Fat 2g']
 	}
 
+	const coffees = [
+		{
+			title: 'Americano',
+			price: '$2.75'
+		},
+		{
+			title: 'Latte',
+			price: '$3.50'
+		},
+		{
+			title: 'Mocha',
+			price: '$4.00'
+		},
+		{
+			title: 'Nitro Cold Brew',
+			price: '$3.75'
+		},
+		{
+			title: 'Brewed Coffee',
+			price: '$2.00'
+		},
+		{
+			title: 'Cappucino',
+			price: '$3.50'
+		},
+		{
+			title: 'Doppio',
+			price: '$2.75'
+		},
+		{
+			title: 'Cortado',
+			price: '$3.25'
+		},
+		{
+			title: 'Hot Chocolate',
+			price: '$2.99'
+		},
+		{
+			title: 'Blended Drink',
+			price: '$5.00'
+		}
+	] 
 
+	const drinks = [
+		{
+			title: 'Chai Tea Latte',
+			price: '$4.00'
+		},
+		{
+			title: 'Loose Leaf Teas',
+			price: '$2.75'
+		},
+		{
+			title: 'M4',
+			price: '$5.00'
+		},
+		{
+			title: 'Redbull Mixer',
+			price: '$4.50'
+		},
+		{
+			title: 'Apple Juice',
+			price: '$2.00'
+		},
+		{
+			title: 'Sparkling Apple Juice',
+			price: '$2.00'
+		},
+		{
+			title: 'Orange Juice',
+			price: '$2.00'
+		},
+		{
+			title: 'Coke',
+			price: '$2.00'
+		},
+		{
+			title: 'Mineral Water',
+			price: '$2.00'
+		},
+		{
+			title: 'Blended Lemonade',
+			price: '$3.25'
+		},
+		{
+			title: 'Loose Leaf Teas',
+			price: '$2.75'
+		},
+	]
 </script>
 
 <svelte:head>
@@ -155,6 +244,10 @@
 		width: 60vw;
 		text-align: center;
 		margin: 0 auto 40px auto;
+	}
+
+	.item {
+		width: 30vw;
 	}
 
   }
@@ -208,6 +301,17 @@
 		</div>
 		<div class='card'>
 			<MenuCard {...theCaprese} />
+		</div>
+	</div>
+	<section id='coffee' />
+	<div class='cards'>
+		<div class='item'>
+			<MenuItem items={coffees} />	
+		</div>
+	</div>
+	<div class='cards'>
+		<div class='item'>
+			<MenuItem items={drinks} />	
 		</div>
 	</div>
 </div>

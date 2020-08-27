@@ -113,6 +113,6 @@
 					phone='509-851-7186'
 					hours='Monday – Sunday: 7am to 6pm'
 					/>
-			</div>
+		</div>
 	</div>
 </div>
