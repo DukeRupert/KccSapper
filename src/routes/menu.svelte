@@ -229,7 +229,7 @@
 
 	.wrapper:first-of-type {
 		
-		margin-top: 120px;
+		margin-top: 200px;
 	}
 
 	.card {
@@ -241,7 +241,12 @@
 	}
 	
 	:target {
-		scroll-margin-top: 40px;
+		scroll-margin-top: 200px;
+	}
+
+	.banner {
+		position: absolute;
+		left: 0px;
 	}
 
 
@@ -312,6 +317,7 @@
 	</div>
 </div>
 <div id='coffee' class='wrapper'>
+	<p class='banner'>A</p>
 	<MenuItem items={coffees} />	
 </div>
 <div id='drinks' class='wrapper'>

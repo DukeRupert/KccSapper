@@ -15,7 +15,8 @@
 
 <style>
   nav {
-    position: relative;
+    position: fixed;
+    top: 0px;
     height: 80px;
     background-color: white;
     color: black;
@@ -30,11 +31,11 @@
 
   @media only screen and (max-width: 655px) {
 
-    nav {
+    /* nav {
       position: sticky;
       position: -webkit-sticky;
       top: 0px;
-    }
+    } */
   }
 </style>
 

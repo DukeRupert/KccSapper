@@ -4,7 +4,7 @@
 
 <style>
   nav {
-    position: absolute;
+    position: fixed;
     top: 80px;
     height: 80px;
     background-color: white;
@@ -18,16 +18,16 @@
     z-index: 100;
   }
 
-  @media only screen and (max-width: 655px) {
+  /* @media only screen and (max-width: 655px) {
 
-    nav {
-      position: fixed;
-    }
-  }
+    
+  } */
 </style>
 
 
 <nav>
   <NavItem title="Sweet" route='/menu#sweet'/>
   <NavItem title="Savory" route='/menu#savory' />
+  <NavItem title='Coffee' route='/menu#coffee' />
+  <NavItem title='Drinks'  route='/menu#drinks' />
 </nav>
