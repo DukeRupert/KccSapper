@@ -6,8 +6,10 @@
 </script>
 
 {#each items as item}
-    <h1>{item.title}</h1>
-    <p>{item.price}</p>
+    <div>
+        <h1>{item.title}</h1>
+        <p>{item.price}</p>
+    </div>
 {/each}
 
 <style>

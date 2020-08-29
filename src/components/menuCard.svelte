@@ -50,7 +50,6 @@
 
     img {
     width: 100%;
-    height: 100%;
     position: relative;
     overflow: hidden;
     box-sizing: border-box;

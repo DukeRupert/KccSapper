@@ -213,17 +213,28 @@
 
 <style>
 	
-	.card-container {
+	.wrapper {
 		width: 100%;
-		height: 100%;
-		margin-top: 120px;
+		/* height: 100%; */
+		/* margin-top: 120px; */
 		padding: 0 5%;
 		text-align: left;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		/* grid-template-rows: minmax(100px, auto); */
+		grid-template-rows: auto;
+		gap: 1em;
+		margin-bottom: 2em;
+	}
+
+	.wrapper:first-of-type {
+		
+		margin-top: 120px;
 	}
 
 	.card {
-		display: inline-block;
-		width: 25vw;
+		/* display: inline-block; */
+		/* width: 25vw; */
 		vertical-align: top;
 		text-align: left;
 		margin: 0 2% 40px 3%;
@@ -236,7 +247,11 @@
 
   @media only screen and (max-width: 655px) {
 
-	.card-container {
+	.wrapper {
+		display: grid;
+		/* grid-auto-flow: column;
+		grid-auto-rows: auto; */
+		grid-template-columns: 1fr;
 		text-align: center;
 	}
 
@@ -246,72 +261,59 @@
 		margin: 0 auto 40px auto;
 	}
 
-	.item {
-		width: 30vw;
-	}
-
   }
 </style>
 
 <MenuNavbar />
-<div class='card-container'>
-	<section id='sweet' />
-	<div class='cards'>
-		<div class='card'>
-			<MenuCard {...theLemon} />
-		</div>
-		<div class='card'>
-			<MenuCard {...thePeanutButter} />
-		</div>
-		<div class='card'>
-			<MenuCard {...theChocolate} />
-		</div>
-		<div class='card'>
-			<MenuCard {...theNutella} />
-		</div>
-		<div class='card'>
-			<MenuCard {...theMixedBerry} />
-		</div>
+<div id='sweet' class='wrapper'>
+	<div class='card'>
+		<MenuCard {...theLemon} />
 	</div>
-	<section id='savory' />
-	<div class='cards'>
-		<div class='card'>
-			<MenuCard {...theEgg} />
-		</div>
-		<div class='card'>
-			<MenuCard {...theBlackBean} />
-		</div>
-		<div class='card'>
-			<MenuCard {...theAllAmerican} />
-		</div>
-		<div class='card'>
-			<MenuCard {...theChicken} />
-		</div>
-		<div class='card'>
-			<MenuCard {...theMonteCristo} />
-		</div>
-		<div class='card'>
-			<MenuCard {...theTurkeyBacon} />
-		</div>
-		<div class='card'>
-			<MenuCard {...theChipotleChicken} />
-		</div>
-		<div class='card'>
-			<MenuCard {...theBreakfastInBed} />
-		</div>
-		<div class='card'>
-			<MenuCard {...theCaprese} />
-		</div>
+	<div class='card'>
+		<MenuCard {...thePeanutButter} />
 	</div>
-	<section id='coffee' />
-	<div class='cards'>
-		<div class='item'>
-			<MenuItem items={coffees} />	
-		</div>
+	<div class='card'>
+		<MenuCard {...theChocolate} />
 	</div>
-	<div class='cards'>
-		<div class='item'>
-			<MenuItem items={drinks} />	
-		</div>
+	<div class='card'>
+		<MenuCard {...theNutella} />
 	</div>
+	<div class='card'>
+		<MenuCard {...theMixedBerry} />
+	</div>
+</div>
+<div id='savory' class='wrapper'>
+	<div class='card'>
+		<MenuCard {...theEgg} />
+	</div>
+	<div class='card'>
+		<MenuCard {...theBlackBean} />
+	</div>
+	<div class='card'>
+		<MenuCard {...theAllAmerican} />
+	</div>
+	<div class='card'>
+		<MenuCard {...theChicken} />
+	</div>
+	<div class='card'>
+		<MenuCard {...theMonteCristo} />
+	</div>
+	<div class='card'>
+		<MenuCard {...theTurkeyBacon} />
+	</div>
+	<div class='card'>
+		<MenuCard {...theChipotleChicken} />
+	</div>
+	<div class='card'>
+		<MenuCard {...theBreakfastInBed} />
+	</div>
+	<div class='card'>
+		<MenuCard {...theCaprese} />
+	</div>
+</div>
+<div id='coffee' class='wrapper'>
+	<MenuItem items={coffees} />	
+</div>
+<div id='drinks' class='wrapper'>
+	<MenuItem items={drinks} />	
 </div>
