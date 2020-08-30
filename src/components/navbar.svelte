@@ -2,6 +2,9 @@
   import Logo from "./logo.svelte";
   import NavItem from "./navItem.svelte";
   import Dropdown from './dropdown.svelte'
+
+  export let segment;
+
   let title = "Kagens Coffee & Crepes";
   let width;
   let mobile = false;
@@ -11,6 +14,7 @@
   else {
     mobile = false;
   }
+
 </script>
 
 <style>
@@ -27,6 +31,10 @@
     justify-content: flex-end;
     box-shadow: rgba(60, 60, 59, 0.75) 0 0 10px;
     z-index: 101;
+  }
+
+  .selected {
+    color: red;
   }
 
   @media only screen and (max-width: 655px) {
@@ -49,7 +57,7 @@
 {:else}
 <nav>
   <Logo {title} />
-  <NavItem title="Menu" route='/menu'/>
+  <NavItem title="Menu" route='/menu' />
   <NavItem title="Locations" route='/locations'/>
   <NavItem title="About Us" route='/about'/>
   <NavItem title="Order Online" route='/test'/>

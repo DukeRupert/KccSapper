@@ -271,6 +271,7 @@
 
 <MenuNavbar />
 <div id='sweet' class='wrapper'>
+	<img class='banner' src='/images/sweet.png' alt='sweet' />
 	<div class='card'>
 		<MenuCard {...theLemon} />
 	</div>
@@ -288,6 +289,7 @@
 	</div>
 </div>
 <div id='savory' class='wrapper'>
+	<img class='banner' src='/images/savory.png' alt='sweet' />
 	<div class='card'>
 		<MenuCard {...theEgg} />
 	</div>
@@ -317,9 +319,10 @@
 	</div>
 </div>
 <div id='coffee' class='wrapper'>
-	<p class='banner'>A</p>
+	<img class='banner' src='/images/coffee.png' alt='sweet' />
 	<MenuItem items={coffees} />	
 </div>
 <div id='drinks' class='wrapper'>
+	<img class='banner' src='/images/drinks.png' alt='sweet' />
 	<MenuItem items={drinks} />	
 </div>
