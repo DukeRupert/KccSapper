@@ -15,6 +15,7 @@
 		padding-top: 0;
 		font-size: 2em;
 		text-align: left;
+		margin-top: 80px;
 
 	}
 
