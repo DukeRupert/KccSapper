@@ -38,7 +38,7 @@
         /* border-top: 1px black solid; */
         box-shadow: rgba(60, 60, 59, 0.75) 0 10px 12px -10px inset;
 
-        background-color: white;
+        background-color: var(--nav-dropdown-background);
     }
     
 </style>
@@ -55,7 +55,7 @@
             <DropdownItem title='MENU' route='menu' onClick={toggle} {segment} />
             <DropdownItem title='LOCATIONS' route='locations' onClick={toggle} {segment} />
             <DropdownItem title='ABOUT US' route='about' onClick={toggle} {segment} />
-            <DropdownItem title='ORDER ONLINE' route='menu' onClick={toggle} {segment} />
+            <DropdownItem title='ORDER ONLINE' route='test' onClick={toggle} {segment} />
         </div>
     </li>
 {/if}

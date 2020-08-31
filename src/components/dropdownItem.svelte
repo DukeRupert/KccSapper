@@ -10,7 +10,10 @@
 </script>
 
 
-<a aria-current='{segment ===  route ? 'page' : undefined }' href={route} on:click={toggle}>
+<a 
+  aria-current='{segment ===  route ? 'page' : undefined }'
+  href={route} 
+  on:click={toggle}>
  {title}
 </a>
 
@@ -22,14 +25,16 @@
     display: flex;
     align-items: center;
     transition: background var(--speed);
+    margin-left: 5%;
     padding: 0.5rem;
-    color: var(--text-color);
-    font-size: 17px;
+    color: var(--nav-dropdown-text);
+    font-size: 24px;
     font-weight: bold;
+    letter-spacing: 2px;
   }
 
   [aria-current] {
-    color: var(--primary);
+    color: black;
 	}
       
 </style>
