@@ -1,7 +1,6 @@
 <script>
-	import MenuNavbar from '../components/menuNavbar.svelte'
-	import MenuCard from '../components/menuCard.svelte'
-	import MenuItem from '../components/menuItem.svelte'
+	import MenuCard from '../../components/menuCard.svelte'
+	import MenuItem from '../../components/menuItem.svelte'
 
 	const theLemon = {
 		src: '../images/crepe_theLemon.jpg', 
@@ -269,7 +268,6 @@
   }
 </style>
 
-<MenuNavbar />
 <div id='sweet' class='wrapper'>
 	<img class='banner' src='/images/sweet.png' alt='sweet' />
 	<div class='card'>

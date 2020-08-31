@@ -52,14 +52,14 @@
 {#if mobile}
 <nav>
   <Logo {title} />
-  <Dropdown />
+  <Dropdown {segment}/>
 </nav>
 {:else}
 <nav>
   <Logo {title} />
-  <NavItem title="Menu" route='/menu' />
-  <NavItem title="Locations" route='/locations'/>
-  <NavItem title="About Us" route='/about'/>
-  <NavItem title="Order Online" route='/test'/>
+  <NavItem title="Menu" route='menu' {segment} />
+  <NavItem title="Locations" route='locations' {segment} />
+  <NavItem title="About Us" route='about' {segment} />
+  <NavItem title="Order Online" route='test' {segment} />
 </nav>
 {/if}

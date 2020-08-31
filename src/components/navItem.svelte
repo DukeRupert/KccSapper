@@ -3,11 +3,12 @@
   export let title = '';
   export let icon = '';
   export let route;
+  export let segment;
 </script>
 
 
   <li>
-    <a href={route}>{icon} {title}</a>
+    <a aria-current='{segment ===  route ? 'page' : undefined }' href={route}> {icon} {title} </a>
   </li>
 
 
@@ -29,6 +30,10 @@
     justify-content: center;
     transition: all 300ms;
   }
+
+  [aria-current] {
+    color: var(--primary);
+	}
 
   @media only screen and (max-width: 900px) {
 

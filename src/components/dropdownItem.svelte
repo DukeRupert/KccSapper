@@ -2,6 +2,7 @@
   import { dropdownOpen } from '../store'
   export let title = '';
   export let route;
+  export let segment;
 
   function toggle() {
       dropdownOpen.update(value => !value);
@@ -9,8 +10,8 @@
 </script>
 
 
-<a href={route} on:click={toggle}>
-  <button>{title}</button>
+<a aria-current='{segment ===  route ? 'page' : undefined }' href={route} on:click={toggle}>
+ {title}
 </a>
 
 
@@ -23,13 +24,12 @@
     transition: background var(--speed);
     padding: 0.5rem;
     color: var(--text-color);
-  }
-
-  button {
     font-size: 17px;
     font-weight: bold;
-    border: none;
-    background-color: white;
   }
+
+  [aria-current] {
+    color: var(--primary);
+	}
       
 </style>

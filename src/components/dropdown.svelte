@@ -5,6 +5,8 @@
     import { dropdownOpen } from '../store';
     import { slide } from 'svelte/transition';
     import { quadOut } from 'svelte/easing';
+
+    export let segment;
     
     //renaming store value to make markup more concise (ie. class:active)
     $: active = $dropdownOpen; 
@@ -50,10 +52,10 @@
 {#if active}
     <li>
         <div transition:slide="{{duration: 500, easing: quadOut }}">
-            <DropdownItem title='MENU' route='/menu' onClick={toggle}/>
-            <DropdownItem title='LOCATIONS' route='/locations' onClick={toggle}/>
-            <DropdownItem title='ABOUT US' route='/about' onClick={toggle}/>
-            <DropdownItem title='ORDER ONLINE' route='/menu' onClick={toggle}/>
+            <DropdownItem title='MENU' route='menu' onClick={toggle} {segment} />
+            <DropdownItem title='LOCATIONS' route='locations' onClick={toggle} {segment} />
+            <DropdownItem title='ABOUT US' route='about' onClick={toggle} {segment} />
+            <DropdownItem title='ORDER ONLINE' route='menu' onClick={toggle} {segment} />
         </div>
     </li>
 {/if}

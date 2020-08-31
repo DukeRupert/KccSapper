@@ -44,21 +44,8 @@ body::-webkit-scrollbar-thumb {
 	--speed: 500ms;
 	
 	/* Theme Colors */
-	--tea-rose: #F8E1DB; 
-	--wisteria: #E2CFD3;
-	--custard: #F7ECBF;
-	--french-chateau: #D6D8CD;
-	--vert-de-terre: #A5A196;
-	--arrowroot: #F6E6CC;
-	--straw: #E7E5BE;
-	--alabaster: #EFEDE0;
-	--oyster: #D7D1C5;
-	--nutmeg: #ACA48F;
-	--antoinette: #EFD9DB;
-	--duck-egg: #CFD7CC;
-	--pear: #E5E7B6;
-	--parchment: #F7EEDF;
-	--french-black: #151618;
+	--primary: #cd1222;
+
 }
 
 a {
