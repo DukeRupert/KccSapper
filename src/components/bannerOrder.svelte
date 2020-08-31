@@ -10,6 +10,7 @@
   div {
     position: relative;
     width: 100%;
+    margin-top: 80px;
   }
 
   :global(.banner) {
