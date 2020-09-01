@@ -2,7 +2,7 @@
 	import Map from '../components/map.svelte';
 	import MapCard from '../components/mapCard.svelte';
 	let uptown = '270 Williams Boulevard <br /> Richland, WA 99354';
-	let pnnl = '2475 Stevens Drive <br /> Richland, WA 99354';
+	let pnnl = '640 Horn Rapids <br /> Richland, WA 99354';
 	import Image from 'svelte-image';
 </script>
 
@@ -95,7 +95,7 @@
 		<div class='card'>
 			<MapCard 
 				link='https://www.google.com/maps/place/270+Williams+Blvd,+Richland,+WA+99354/' 
-				image='https://maps.googleapis.com/maps/api/staticmap?center=270+Williams+Blvd,+Richland,+WA+99354&zoom=18&scale=false&size=500x500&maptype=roadmap&key=AIzaSyDHsJtQBjSzsLPwckAWjEPymWqY-zZtFOw&map_id=cef788b41fcab785'
+				image='https://maps.googleapis.com/maps/api/staticmap?markers=270+Williams+Blvd,+Richland,+WA+99354&zoom=18&scale=false&size=500x500&maptype=roadmap&key=AIzaSyDHsJtQBjSzsLPwckAWjEPymWqY-zZtFOw&map_id=cef788b41fcab785'
 				alt='Google Map of 270 Williams Blvd, Richland, WA 99354' 
 				title='UPTOWN KAGENS'
 				address={uptown}
@@ -105,13 +105,13 @@
 		</div>
 		<div class='card'>
 				<MapCard 
-					link='https://www.google.com/maps/place/902+Battelle+Blvd,+Richland,+WA+99354/' 
-					image='https://maps.googleapis.com/maps/api/staticmap?center=902+Battelle+Blvd,+Richland,+WA+99354&zoom=16&scale=false&size=500x500&maptype=roadmap&key=AIzaSyDHsJtQBjSzsLPwckAWjEPymWqY-zZtFOw&map_id=d6fafe2bc3c4597b'
-					alt='Google Map of 902 Battelle Blvd, Richland, WA 99354'
+					link='https://www.google.com/maps/place/640+Horn+Rapids+Rd,+Richland,+WA+99354/' 
+					image='https://maps.googleapis.com/maps/api/staticmap?markers=640+Horn+Rapids+Rd,+Richland,+WA+99354&zoom=16&scale=false&size=500x500&maptype=roadmap&key=AIzaSyDHsJtQBjSzsLPwckAWjEPymWqY-zZtFOw&map_id=d6fafe2bc3c4597b'
+					alt='Google Map of 640 Horn Rapids, Richland, WA 99354'
 					title='PNNL KAGENS'
 					address={pnnl}
 					phone='509-851-7186'
-					hours='Monday – Sunday: 7am to 6pm'
+					hours='Monday – Friday: 7am to 2pm'
 					/>
 		</div>
 	</div>
