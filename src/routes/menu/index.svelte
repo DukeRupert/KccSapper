@@ -211,7 +211,7 @@
 </svelte:head>
 
 <style>
-	.anchor { padding-top: 90px; }
+	.anchor { padding-top: 200px; }
 
 	.wrapper {
 		width: 100%;
@@ -317,8 +317,9 @@
 	<img class='banner' src='/images/coffee.png' alt='sweet' />
 	<MenuItem items={coffees} />	
 </div>
-<div id='drinks' class='wrapper'>
-	<a class='anchor' />
+<a class='anchor' id='drinks'/>
+<div class='wrapper'>
+	
 	<img class='banner' src='/images/drinks.png' alt='sweet' />
 	<MenuItem items={drinks} />	
 </div>
