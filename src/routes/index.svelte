@@ -23,7 +23,7 @@
 </style>
 	  
 <main>
-	<BannerOrder label='ORDER ONLINE' route='/' right />
+	<BannerOrder label='ORDER ONLINE' route='https://ordering.chownow.com/order/15130/locations?add_cn_ordering_class=true' right />
 	<BannerLocations label='LOCATIONS' route='/locations' left />
 	<BannerMenu label='MENU' route='/menu' right />
 	<!-- <Instagram /> -->

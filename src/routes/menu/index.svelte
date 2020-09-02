@@ -214,16 +214,13 @@
 	
 	.wrapper {
 		width: 100%;
-		/* height: 100%; */
-		/* margin-top: 120px; */
 		padding: 0 5%;
 		text-align: left;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		/* grid-template-rows: minmax(100px, auto); */
 		grid-template-rows: auto;
 		gap: 1em;
-		margin-bottom: 2em;
+		margin-bottom: 4em;
 	}
 
 	.wrapper:first-of-type {
