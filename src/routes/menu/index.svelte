@@ -229,8 +229,6 @@
 	}
 
 	.card {
-		/* display: inline-block; */
-		/* width: 25vw; */
 		vertical-align: top;
 		text-align: left;
 		margin: 0 2% 40px 3%;
@@ -238,6 +236,7 @@
 	
 	:target {
 		scroll-margin-top: 200px;
+		scroll-snap-margin-top: 200px; /*For Safari*/
 	}
 
 	.banner {

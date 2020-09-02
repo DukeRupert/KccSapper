@@ -33,18 +33,6 @@
     z-index: 101;
   }
 
-  .selected {
-    color: red;
-  }
-
-  @media only screen and (max-width: 655px) {
-
-    /* nav {
-      position: sticky;
-      position: -webkit-sticky;
-      top: 0px;
-    } */
-  }
 </style>
 
 <svelte:window bind:innerWidth={width}/>

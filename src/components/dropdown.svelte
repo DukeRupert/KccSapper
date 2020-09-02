@@ -35,7 +35,6 @@
         width:100%;
         height: calc(100% - 80px);
         box-sizing: border-box;
-        /* border-top: 1px black solid; */
         box-shadow: rgba(60, 60, 59, 0.75) 0 10px 12px -10px inset;
 
         background-color: var(--nav-dropdown-background);
