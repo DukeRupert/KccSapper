@@ -55,7 +55,7 @@
             <DropdownItem title='MENU' route='menu' onClick={toggle} {segment} />
             <DropdownItem title='LOCATIONS' route='locations' onClick={toggle} {segment} />
             <DropdownItem title='ABOUT US' route='about' onClick={toggle} {segment} />
-            <DropdownItem title='ORDER ONLINE' route='test' onClick={toggle} {segment} />
+            <DropdownItem title='ORDER ONLINE' route='https://ordering.chownow.com/order/15130/locations?add_cn_ordering_class=true' onClick={toggle} {segment} />
         </div>
     </li>
 {/if}
