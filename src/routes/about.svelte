@@ -20,7 +20,7 @@
 	}
 
 	p {
-		font-size: 17px;
+		font-size: 19px;
 	}
 
 	:global(.portrait) {
@@ -53,17 +53,20 @@
 <div>
 	<h1>OUR STORY</h1>
 	<p>
-		Jennifer and I (Kagen) found Crepes during one of our road trips, and
-		felt we couldn’t pass up bringing this cuisine to the Tri-Cities. After
-		months of researching the best recipes, griddles, and coffees we finally
-		found our location in the historic heart of Richland; The Uptown!
+			Families and friends need a place to gather.
+			A place to visit, catch up and simply enjoy life together. 
+			At KCC we believe in togetherness and community. 
+			My family’s best conversations growing up happened
+			around a table while snacking on tasty food. 
 	</p>
 	<p>
-		Our dream became a reality with the support of our family and friends,
-		and a growing number Tri-Citians passionate about supporting our small
-		business. We opened Kagen Coffee and Crepes (K1) at the Uptown in
-		October 2016. Visit our newest locations Kagen Coffee and Bistro (K2) at
-		Tri-Cities Research District and Kagen Coffee and Crepes at PNNL (K3).
+			When my wife and I would travel our favorite thing to do was visit crepe shops. 
+			It was then that we realized what we wanted to create for our community - 
+			a gathering place. A fun place to visit a friend, a quiet place to do homework, a warm place to 
+			meet up with your small group. 
+			
+			Here, we bring you our heart and passion through our love of crepes, coffee, 
+			locally sourced ciders and wine. So come on down, order a crepe and start making memories. 
 	</p>
 	<p>
 		Keep following us here, Facebook, and Instagram to see our future growth
