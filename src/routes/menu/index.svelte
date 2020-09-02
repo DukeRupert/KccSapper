@@ -211,7 +211,10 @@
 </svelte:head>
 
 <style>
-	.anchor { padding-top: 200px; }
+	.anchor { 
+		margin-top: -200px;
+		padding-top: 200px;
+	}
 
 	.wrapper {
 		width: 100%;
@@ -235,10 +238,9 @@
 		margin: 0 2% 40px 3%;
 	}
 	
-	:target {
+	/* :target {
 		scroll-margin-top: 200px;
-		scroll-snap-margin-top: 200px; /*For Safari*/
-	}
+	} */
 
 	.banner {
 		position: absolute;
@@ -265,7 +267,8 @@
   }
 </style>
 
-<div id='sweet' class='wrapper'>
+<a class='anchor' id='sweet'/>
+<div class='wrapper'>
 	<img class='banner' src='/images/sweet.png' alt='sweet' />
 	<div class='card'>
 		<MenuCard {...theLemon} />
@@ -283,7 +286,9 @@
 		<MenuCard {...theMixedBerry} />
 	</div>
 </div>
-<div id='savory' class='wrapper'>
+
+<a class='anchor' id='savory'/>
+<div class='wrapper'>
 	<img class='banner' src='/images/savory.png' alt='sweet' />
 	<div class='card'>
 		<MenuCard {...theEgg} />
@@ -313,13 +318,15 @@
 		<MenuCard {...theCaprese} />
 	</div>
 </div>
-<div id='coffee' class='wrapper'>
+
+<a class='anchor' id='coffee'/>
+<div class='wrapper'>
 	<img class='banner' src='/images/coffee.png' alt='sweet' />
 	<MenuItem items={coffees} />	
 </div>
+
 <a class='anchor' id='drinks'/>
 <div class='wrapper'>
-	
 	<img class='banner' src='/images/drinks.png' alt='sweet' />
 	<MenuItem items={drinks} />	
 </div>
