@@ -48,6 +48,6 @@
   <NavItem title="Menu" route='menu' {segment} />
   <NavItem title="Locations" route='locations' {segment} />
   <NavItem title="About Us" route='about' {segment} />
-  <NavItem title="Order Online" route='test' {segment} />
+  <NavItem title="Order Online" route='https://ordering.chownow.com/order/15130/locations?add_cn_ordering_class=true' {segment} />
 </nav>
 {/if}

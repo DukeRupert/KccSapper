@@ -204,6 +204,7 @@
 			price: '$2.75'
 		},
 	]
+
 </script>
 
 <svelte:head>
@@ -218,7 +219,7 @@
 
 	.wrapper {
 		width: 100%;
-		padding: 0 5%;
+		padding: 0 10%;
 		text-align: left;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
@@ -247,8 +248,12 @@
 		left: 0px;
 	}
 
+	p {
+		padding: 0 10%;
+	}
 
-  @media only screen and (max-width: 655px) {
+
+  @media only screen and (max-width: 755px) {
 
 	.wrapper {
 		display: grid;
@@ -330,3 +335,5 @@
 	<img class='banner' src='/images/drinks.png' alt='sweet' />
 	<MenuItem items={drinks} />	
 </div>
+<a class='anchor' id='adult'/>
+<p>Looking for locally sourced Wine, Cider or Beer? Come in today to see our rotating selection!</p>
