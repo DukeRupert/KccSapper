@@ -111,22 +111,17 @@
       href="mailto: info@kagenandco.com">info@kagenandco.com</a> or fill in your
     details below.
   </p>
-  <form
-    name="contact"
-    method="POST"
-    data-netlify="true"
-    data-netlify-recaptcha="true">
+  <form name="contact" method="POST" data-netlify="true">
     <label>NAME</label>
     <input type="text" name="name" />
     <label>EMAIL</label>
     <input type="email" name="email" />
     <label>MESSAGE</label>
     <textarea rows="6" type="text" name="message" />
-    <div data-netlify-recaptcha="true" />
     <button type="submit">SUBMIT</button>
   </form>
 
-  <form name="test" method="POST" data-netlify="true">
+  <form name="test" method="POST">
     <p><label>Your Name: <input type="text" name="name" /></label></p>
     <p><label>Your Email: <input type="email" name="email" /></label></p>
     <p>
