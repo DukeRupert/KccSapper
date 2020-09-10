@@ -111,16 +111,6 @@
       href="mailto: info@kagenandco.com">info@kagenandco.com</a> or fill in your
     details below.
   </p>
-  <!-- <form name="contact" method="POST" data-netlify="true">
-    <label>NAME</label>
-    <input type="text" name="name" />
-    <label>EMAIL</label>
-    <input type="email" name="email" />
-    <label>MESSAGE</label>
-    <textarea rows="6" type="text" name="message" />
-    <button type="submit">SUBMIT</button>
-  </form> -->
-
   <form name="contact" method="POST" data-netlify="true">
     <input type="hidden" name="form-name" value="contact" />
     <p><label>Your Name: <input type="text" name="name" /></label></p>
