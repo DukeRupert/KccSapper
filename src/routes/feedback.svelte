@@ -14,7 +14,11 @@
     text-align: left;
     background-color: white;
     width: 100%;
-    margin-top: 80px;
+    margin: 80px 15% 0 15%;
+  }
+
+  h1 {
+    font-size: min(3vw, 2em);
   }
 
   p {
@@ -43,10 +47,10 @@
     align-self: center;
     align-items: center;
     justify-content: center;
-    width: 30vw;
+    /* width: 30vw; */
     padding: 5px;
     margin-top: 1rem;
-    padding: 0.5em 1em;
+    padding: 1em 2em;
     border-radius: 40px;
     border-color: black;
     background-color: #f7e7a6;
@@ -59,6 +63,7 @@
 
   @media only screen and (max-width: 655px) {
     .container {
+      margin: 80px 5% 0 5%;
       padding: 1em;
     }
 
@@ -93,8 +98,8 @@
     }
 
     button {
-      padding-right: 1rem;
-      padding-left: 1rem;
+      /* padding-right: 1rem;
+      padding-left: 1rem; */
       border-radius: 30px;
       font-size: 14px;
     }
@@ -107,21 +112,28 @@
 <div class="container">
   <h1>CONTACT US</h1>
   <p>
-    We’d love to hear from you! Send us an email to <a
-      href="mailto: info@kagenandco.com">info@kagenandco.com</a> or fill in your
-    details below.
+    We’d love to hear from you! Send us an email to <strong><a
+        href="mailto: info@kagenandco.com">info@kagenandco.com</a></strong> or fill
+    in your details below.
   </p>
-  <form name="contact" method="POST" data-netlify="true">
+  <form
+    name="contact"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    data-netlify-recaptcha="true">
     <input type="hidden" name="form-name" value="contact" />
-    <p><label>Your Name: <input type="text" name="name" /></label></p>
-    <p><label>Your Email: <input type="email" name="email" /></label></p>
-    <p>
-      <label>Your Role: <select name="role[]" multiple>
-          <option value="leader">Leader</option>
-          <option value="follower">Follower</option>
-        </select></label>
-    </p>
-    <p><label>Message: <textarea name="message" /></label></p>
-    <p><button type="submit">Send</button></p>
+    <div hidden aria-hidden="true">
+      <label>
+        Don’t fill this out if you're human: <input name="bot-field" />
+      </label>
+    </div>
+    <label>NAME - Optional</label>
+    <input type="text" name="name" />
+    <label>EMAIL - Required</label>
+    <input type="email" name="email" required />
+    <label>MESSAGE - Required</label>
+    <textarea rows="6" type="text" name="message" required />
+    <button type="submit">SUBMIT</button>
   </form>
 </div>
