@@ -1,25 +1,15 @@
 <script>
-  import { dropdownOpen } from '../store'
-  export let title = '';
+  import { dropdownOpen } from "../store";
+  export let title = "";
   export let route;
   export let segment;
 
   function toggle() {
-      dropdownOpen.update(value => !value);
+    dropdownOpen.update((value) => !value);
   }
 </script>
 
-
-<a 
-  aria-current='{segment ===  route ? 'page' : undefined }'
-  href={route} 
-  on:click={toggle}>
- {title}
-</a>
-
-
 <style>
-
   a {
     height: 50px;
     display: flex;
@@ -32,9 +22,18 @@
     font-weight: bold;
     letter-spacing: 2px;
   }
-
+  .emphasize {
+    text-decoration: underline;
+  }
   [aria-current] {
     color: black;
-	}
-      
+  }
 </style>
+
+<a
+  aria-current={segment === route ? 'page' : undefined}
+  class={title === 'ORDER ONLINE' ? 'emphasize' : ''}
+  href={route}
+  on:click={toggle}>
+  {title}
+</a>

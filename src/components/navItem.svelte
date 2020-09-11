@@ -1,19 +1,11 @@
 <script>
   // your script goes here
-  export let title = '';
-  export let icon = '';
+  export let title = "";
   export let route;
   export let segment;
 </script>
 
-
-  <li>
-    <a aria-current='{segment ===  route ? 'page' : undefined }' href={route}> {icon} {title} </a>
-  </li>
-
-
 <style>
-
   li {
     display: flex;
     align-items: center;
@@ -31,12 +23,16 @@
     transition: all 300ms;
   }
 
+  .emphasize {
+    border: 2px var(--secondary) solid;
+    border-radius: 40px;
+  }
+
   [aria-current] {
     color: var(--primary);
-	}
+  }
 
   @media only screen and (max-width: 900px) {
-
     li {
       font-size: 19px;
     }
@@ -46,5 +42,10 @@
       margin-right: 10px;
     }
   }
-      
 </style>
+
+<li class={title === 'Order Online' ? 'emphasize' : ''}>
+  <a aria-current={segment === route ? 'page' : undefined} href={route}>
+    {title}
+  </a>
+</li>

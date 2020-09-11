@@ -45,6 +45,7 @@ body::-webkit-scrollbar-thumb {
 	
 	/* Theme Colors */
 	--primary: #cd1222;
+	--secondary: #f8c24c;
 	--nav-dropdown-background: #f8c24c;
 	--nav-dropdown-text: white;
 
