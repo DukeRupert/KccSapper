@@ -120,7 +120,8 @@
     name="contact"
     method="POST"
     data-netlify="true"
-    netlify-honeypot="bot-field">
+    netlify-honeypot="bot-field"
+    data-netlify-recaptcha="true">
     <input type="hidden" name="form-name" value="contact" />
     <div hidden aria-hidden="true">
       <label>
@@ -133,6 +134,7 @@
     <input type="email" name="email" required />
     <label>MESSAGE - Required</label>
     <textarea rows="6" type="text" name="message" required />
+    <div data-netlify-recaptcha="true" />
     <button type="submit">SUBMIT</button>
   </form>
 </div>
