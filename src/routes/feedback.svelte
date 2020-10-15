@@ -1,7 +1,3 @@
-<script>
-  import { contact } from "../store";
-</script>
-
 <style>
   .container {
     display: flex;
@@ -111,11 +107,6 @@
 </svelte:head>
 <div class="container">
   <h1>CONTACT US</h1>
-  <p>
-    We’d love to hear from you! Send us an email to <strong><a
-        href="mailto: info@kagenandco.com">info@kagenandco.com</a></strong> or fill
-    in your details below.
-  </p>
   <form
     name="contact"
     method="POST"
@@ -127,12 +118,14 @@
         Don’t fill this out if you're human: <input name="bot-field" />
       </label>
     </div>
-    <label>NAME - Optional</label>
-    <input type="text" name="name" />
-    <label>EMAIL - Required</label>
-    <input type="email" name="email" required />
-    <label>MESSAGE - Required</label>
-    <textarea rows="6" type="text" name="message" required />
-    <button type="submit">SUBMIT</button>
+    <label for="fname">FIRST NAME - Optional</label>
+    <input id="fname" type="text" name="firstName" />
+    <label for="lname">LAST NAME - Optional</label>
+    <input id="lname" type="text" name="lastName" />
+    <label for="email">EMAIL - Required</label>
+    <input id="email" name="email" required />
+    <label for="message">MESSAGE - Required</label>
+    <textarea id="message" rows="6" type="text" name="message" required />
+    <Button type="submit" label="Submit" center />
   </form>
 </div>
