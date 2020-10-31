@@ -57,6 +57,11 @@
     transform: scale(1.1);
   }
 
+  .req {
+    margin-left: 3px;
+    color: #f74545;
+  }
+
   @media only screen and (max-width: 655px) {
     .container {
       margin: 80px 5% 0 5%;
@@ -115,17 +120,16 @@
     <input type="hidden" name="form-name" value="contact" />
     <div hidden aria-hidden="true">
       <label>
-        Don’t fill this out if you're human: <input name="bot-field" />
+        Don’t fill this out if you're human:
+        <input name="bot-field" />
       </label>
     </div>
-    <label for="fname">FIRST NAME - Optional</label>
-    <input id="fname" type="text" name="firstName" />
-    <label for="lname">LAST NAME - Optional</label>
-    <input id="lname" type="text" name="lastName" />
-    <label for="email">EMAIL - Required</label>
-    <input id="email" name="email" required />
-    <label for="message">MESSAGE - Required</label>
-    <textarea id="message" rows="6" type="text" name="message" required />
-    <Button type="submit" label="Submit" center />
+    <label> NAME <span class="req">*</span> </label>
+    <input type="text" name="name" required />
+    <label> EMAIL <span class="req">*</span> </label>
+    <input type="email" name="email" required />
+    <label> MESSAGE <span class="req">*</span> </label>
+    <textarea rows="6" type="text" name="message" required />
+    <button type="submit">Submit</button>
   </form>
 </div>
