@@ -7,3 +7,12 @@ yarn-error.log
 
 # Local Netlify folder
 .netlify
+
+# VS Code local files
+.vscode
+
+# environment variables
+.env
+
+# node_modules for functions
+/functions/submission-created/node_modules/
