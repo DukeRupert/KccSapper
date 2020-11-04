@@ -1,5 +1,4 @@
 <script>
-  // your script goes here
   export let title = "";
   export let route;
   export let segment;
@@ -26,6 +25,12 @@
   .emphasize {
     border: 2px var(--secondary) solid;
     border-radius: 40px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .emphasize:hover {
+    background-color: var(--secondary);
+    color: white;
   }
 
   [aria-current] {
