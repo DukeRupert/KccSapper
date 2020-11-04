@@ -14,17 +14,19 @@
     height: 50px;
     display: flex;
     align-items: center;
-    transition: background var(--speed);
     margin-left: 5%;
     padding: 0.5rem;
     color: var(--nav-dropdown-text);
     font-size: 24px;
     font-weight: bold;
-    letter-spacing: 2px;
   }
   .emphasize {
-    text-decoration: underline;
+    color: var(--nav-dropdown-background);
+    background-color: white;
+    border-radius: 40px;
+    padding: inherit;
   }
+
   [aria-current] {
     color: black;
   }
@@ -32,8 +34,7 @@
 
 <a
   aria-current={segment === route ? 'page' : undefined}
-  class={title === 'ORDER ONLINE' ? 'emphasize' : ''}
   href={route}
   on:click={toggle}>
-  {title}
+  <div class={title === 'ORDER ONLINE' ? 'emphasize' : ''}>{title}</div>
 </a>
