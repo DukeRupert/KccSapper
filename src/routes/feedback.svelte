@@ -17,10 +17,6 @@
     font-size: min(3vw, 2em);
   }
 
-  p {
-    font-size: 17px;
-  }
-
   form {
     display: flex;
     flex-direction: column;
@@ -43,7 +39,6 @@
     align-self: center;
     align-items: center;
     justify-content: center;
-    /* width: 30vw; */
     padding: 5px;
     margin-top: 1rem;
     padding: 1em 2em;
@@ -90,17 +85,7 @@
     h1 {
       font-size: 24px;
     }
-    p {
-      font-size: 14px;
-    }
-
-    a {
-      font-weight: bold;
-    }
-
     button {
-      /* padding-right: 1rem;
-      padding-left: 1rem; */
       border-radius: 30px;
       font-size: 14px;
     }
@@ -114,6 +99,7 @@
   <h1>CONTACT US</h1>
   <form
     name="contact"
+    action="/success"
     method="POST"
     data-netlify="true"
     netlify-honeypot="bot-field">
