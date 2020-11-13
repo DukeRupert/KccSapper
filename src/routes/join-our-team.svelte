@@ -17,6 +17,14 @@
     font-size: min(3vw, 2em);
   }
 
+  h2 {
+    font-size: min(2vw, 1.5em);
+  }
+
+  p {
+    font-size: 19px;
+  }
+
   form {
     display: flex;
     flex-direction: column;
@@ -76,6 +84,12 @@
     h1 {
       font-size: 24px;
     }
+    h2 {
+      font-size: 19px;
+    }
+    p {
+      font-size: 14px;
+    }
     button {
       border-radius: 30px;
       font-size: 14px;
@@ -84,10 +98,18 @@
 </style>
 
 <svelte:head>
-  <title>Join Our Team</title>
+  <title>
+    Join Our Team - Apply for a job at a Kagen's Coffee and Crepes location
+    today!
+  </title>
 </svelte:head>
 <div class="container">
-  <h1>Apply</h1>
+  <h1>Join Our Team</h1>
+  <h2>
+    If you are passionate about coffee, crepes, and your local community, we
+    want you!
+  </h2>
+  <p>*Must be 18 years or older to apply*</p>
   <form
     name="applicant"
     action="/success"
@@ -102,13 +124,13 @@
         <input name="bot-field" />
       </label>
     </div>
-    <label> NAME <span class="req">*</span> </label>
+    <label> Name <span class="req">*</span> </label>
     <input type="text" name="name" required />
-    <label> EMAIL <span class="req">*</span> </label>
+    <label> Email <span class="req">*</span> </label>
     <input type="email" name="email" required />
     <label> What job are you applying for? <span class="req">*</span> </label>
     <input type="text" name="job-title" required />
-    <label> RESUME <span class="req">*</span> </label>
+    <label> Resume <span class="req">*</span> </label>
     <input type="file" name="resume" required />
     <button type="submit">Submit</button>
   </form>

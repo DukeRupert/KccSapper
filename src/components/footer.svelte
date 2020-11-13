@@ -91,7 +91,7 @@
   <div class="links">
     <h4>LINKS</h4>
     <a href="/feedback"><p>Contact Us</p></a>
-    <a href="/join-our-team">Join Our Team</a>
+    <a href="/join-our-team"><p>Join Our Team</p></a>
   </div>
   <div class="socialMedia">
     <h4>FOLLOW US</h4>
