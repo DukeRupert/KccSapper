@@ -21,10 +21,6 @@
     font-size: min(2vw, 1.5em);
   }
 
-  p {
-    font-size: 19px;
-  }
-
   form {
     display: flex;
     flex-direction: column;
@@ -87,9 +83,6 @@
     h2 {
       font-size: 19px;
     }
-    p {
-      font-size: 14px;
-    }
     button {
       border-radius: 30px;
       font-size: 14px;
@@ -129,6 +122,11 @@
     <input type="email" name="email" required />
     <label> What job are you applying for? <span class="req">*</span> </label>
     <input type="text" name="job-title" required />
+    <label>
+      Which location(s) are you applying to?
+      <span class="req">*</span>
+    </label>
+    <input type="text" name="locations" required />
     <label> Resume <span class="req">*</span> </label>
     <input type="file" name="resume" required />
     <button type="submit">Submit</button>

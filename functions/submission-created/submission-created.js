@@ -14,11 +14,16 @@ const sendThankYouEmail = async (payload) => {
       "company_name" : "Firefly Software Engineering",
       "Date" : date
     };
+
+    // pick correct template based on form
+    let template = 'kcc-';
+    template += payload.human_fields["Form-name"];
+    console.log(template);
     
     // build email params object
     const mailData = {
       "From": process.env.FROM_ADDRESS,
-      "TemplateAlias" : "kcc-contact",
+      "TemplateAlias" : template,
       "TemplateModel" : model,
       "To": process.env.TO_ADDRESS,
     };
@@ -33,8 +38,9 @@ const sendThankYouEmail = async (payload) => {
   });
 };
 
-exports.handler = async event => {
+exports.handler = async (event) => {
   try {
+
     // Grab form data from netlify
     const data = JSON.parse(event.body).payload;
     
