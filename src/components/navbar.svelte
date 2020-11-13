@@ -1,7 +1,7 @@
 <script>
   import Logo from "./logo.svelte";
   import NavItem from "./navItem.svelte";
-  import Dropdown from './dropdown.svelte'
+  import Dropdown from "./dropdown.svelte";
 
   export let segment;
 
@@ -10,11 +10,9 @@
   let mobile = false;
   $: if (width < 710) {
     mobile = true;
-  }
-  else {
+  } else {
     mobile = false;
   }
-
 </script>
 
 <style>
@@ -32,22 +30,25 @@
     box-shadow: rgba(60, 60, 59, 0.75) 0 0 10px;
     z-index: 101;
   }
-
 </style>
 
-<svelte:window bind:innerWidth={width}/>
+<svelte:window bind:innerWidth={width} />
 
 {#if mobile}
-<nav>
-  <Logo {title} />
-  <Dropdown {segment}/>
-</nav>
+  <nav>
+    <Logo {title} />
+    <Dropdown {segment} />
+  </nav>
 {:else}
-<nav>
-  <Logo {title} />
-  <NavItem title="Menu" route='menu' {segment} />
-  <NavItem title="Locations" route='locations' {segment} />
-  <NavItem title="About Us" route='about' {segment} />
-  <NavItem title="Order Online" route='https://ordering.chownow.com/order/15130/locations?add_cn_ordering_class=true' {segment} />
-</nav>
+  <nav>
+    <Logo {title} />
+    <NavItem title="Menu" route="menu" {segment} />
+    <NavItem title="Locations" route="locations" {segment} />
+    <NavItem title="About Us" route="about" {segment} />
+    <NavItem title="Join Our Team" route="join-our-team" {segment} />
+    <NavItem
+      title="Order Online"
+      route="https://ordering.chownow.com/order/15130/locations?add_cn_ordering_class=true"
+      {segment} />
+  </nav>
 {/if}

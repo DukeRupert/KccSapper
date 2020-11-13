@@ -57,6 +57,11 @@
         {segment} />
       <DropdownItem title="ABOUT US" route="about" onClick={toggle} {segment} />
       <DropdownItem
+        title="JOIN OUR TEAM"
+        route="join-our-team"
+        onClick={toggle}
+        {segment} />
+      <DropdownItem
         title="CONTACT US"
         route="feedback"
         onClick={toggle}

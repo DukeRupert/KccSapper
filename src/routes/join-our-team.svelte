@@ -109,7 +109,6 @@
     If you are passionate about coffee, crepes, and your local community, we
     want you!
   </h2>
-  <p>*Must be 18 years or older to apply*</p>
   <form
     name="applicant"
     action="/success"
