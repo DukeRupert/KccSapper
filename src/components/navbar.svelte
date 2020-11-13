@@ -8,7 +8,7 @@
   let title = "Kagens Coffee & Crepes";
   let width;
   let mobile = false;
-  $: if (width < 710) {
+  $: if (width < 1100) {
     mobile = true;
   } else {
     mobile = false;
