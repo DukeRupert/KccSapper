@@ -12,6 +12,12 @@
     #Command to execute when you execute 'Netlify dev'
    command = 'npm run dev'
 
+# Deploy Preview context:
+# All deploys generated from a pull/merge request
+# will inherit these settings.
+[context.deploy-preview.environment]
+  TO_ADDRESS="logan@firefly.llc"
+
 
 
    
