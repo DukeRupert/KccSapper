@@ -92,9 +92,10 @@
     name="applicant"
     action="/success"
     method="POST"
+    enctype="multipart/form-data"
     data-netlify="true"
     netlify-honeypot="bot-field">
-    <input type="hidden" name="form-name" value="contact" />
+    <input type="hidden" name="form-name" value="applicant" />
     <div hidden aria-hidden="true">
       <label>
         Don’t fill this out if you're human:
