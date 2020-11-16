@@ -1,6 +1,17 @@
 <script>
-  import json from '../store/instagram.json'
-  let post = json.data;
+  const url = "/.netlify/functions/fetch-instagram";
+
+  async function fetchData() {
+    const res = await fetch(url);
+    const data = await res.json();
+
+    if (res.ok) {
+      console.log(data);
+      return data;
+    } else {
+      throw new Error(data);
+    }
+  }
 </script>
 
 <style>
@@ -36,27 +47,28 @@
     height: 50%;
     background-color: black;
   }
-
-
 </style>
 
 <div>
-  {#each post as {permalink, media_type, media_url, thumbnail_url}}
-    {#if media_type == 'IMAGE'}
-      <div class='post'>
-        <a href={permalink}>
-          <img src={media_url}/>
-        </a>
-      </div>
-    {:else if media_type == 'VIDEO'}
-      <div class='post'>
-        <a href={permalink}>
-          <img src={thumbnail_url}/>
-        </a>
-      </div>
-    {:else}
-    <div class='failed'>
-    </div>
-    {/if}
-  {/each}
+  {#await fetchData()}
+    <p>loading</p>
+  {:then posts}
+    {#each { length: 1 } as _, i}
+      {#if posts[i].media_type == 'IMAGE' || posts[i].media_type == 'CAROUSEL_ALBUM'}
+        <div class="post">
+          <a href={posts[i].permalink}> <img src={posts[i].media_url} /> </a>
+        </div>
+      {:else if posts[i].media_type == 'VIDEO'}
+        <div class="post">
+          <a href={posts[i].permalink}>
+            <img src={posts[i].thumbnail_url} />
+          </a>
+        </div>
+      {:else}
+        <div class="failed" />
+      {/if}
+    {/each}
+  {:catch error}
+    <p style="color: red">{error.message}</p>
+  {/await}
 </div>
