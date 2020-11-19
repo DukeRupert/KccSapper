@@ -2,8 +2,10 @@
   import Navbar from "../components/navbar.svelte";
 
   export let segment;
+
   let width;
   let mobile = false;
+
   $: if (width < 1100) {
     mobile = true;
   } else {
@@ -12,7 +14,7 @@
 </script>
 
 <style>
-  main {
+  div {
     text-align: center;
     padding: 0px;
     max-width: 100%;
@@ -26,7 +28,6 @@
   }
 </style>
 
-<svelte:window bind:innerWidth={width} />
 <svelte:head>
   <!-- Facebook Pixel Code -->
   <script>
@@ -63,8 +64,10 @@
   <!-- End Facebook Pixel Code -->
 </svelte:head>
 
+<svelte:window bind:innerWidth={width} />
+
 <Navbar {segment} {mobile} />
 
-<main>
+<div>
   <slot />
-</main>
+</div>

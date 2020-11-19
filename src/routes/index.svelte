@@ -4,6 +4,14 @@
   import BannerOrder from "../components/bannerOrder.svelte";
   import Instagram from "../components/instagram.svelte";
   import Footer from "../components/footer.svelte";
+
+  let width;
+  let mobile = false;
+  $: if (width < 1100) {
+    mobile = true;
+  } else {
+    mobile = false;
+  }
 </script>
 
 <style>
@@ -21,6 +29,8 @@
   }
 </style>
 
+<svelte:window bind:innerWidth={width} />
+
 <main>
   <BannerOrder
     label="ORDER ONLINE"
@@ -29,5 +39,7 @@
   <BannerLocations label="LOCATIONS" route="/locations" left />
   <BannerMenu label="MENU" route="/menu" right />
   <Footer />
-  <Instagram />
+  {#if mobile}
+    <Instagram />
+  {/if}
 </main>
