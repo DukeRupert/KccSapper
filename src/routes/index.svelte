@@ -1,5 +1,4 @@
 <script>
-  import Navbar from "../components/navbar.svelte";
   import BannerMenu from "../components/bannerMenu.svelte";
   import BannerLocations from "../components/bannerLocations.svelte";
   import BannerOrder from "../components/bannerOrder.svelte";
