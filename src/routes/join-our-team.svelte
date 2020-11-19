@@ -120,8 +120,6 @@
     <input type="text" name="name" required />
     <label> Email <span class="req">*</span> </label>
     <input type="email" name="email" required />
-    <label> What job are you applying for? <span class="req">*</span> </label>
-    <input type="text" name="job-title" required />
     <label>
       Which location(s) are you applying to?
       <span class="req">*</span>
