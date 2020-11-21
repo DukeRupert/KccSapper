@@ -17,7 +17,7 @@
 <style>
   div {
     position: relative;
-    height: 50vw;
+    height: 100%;
     width: 100%;
     background-color: black;
 
@@ -27,17 +27,12 @@
   }
 
   .post {
-    flex: 0 25%;
-    height: 50%;
-
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+    padding: 2% 0;
   }
 
   img {
     width: 100%;
-    padding-bottom: 50%;
+    height: auto;
     position: relative;
     object-fit: cover;
   }
@@ -53,7 +48,7 @@
   {#await fetchData()}
     <p>loading</p>
   {:then posts}
-    {#each { length: 1 } as _, i}
+    {#each { length: 5 } as _, i}
       {#if posts[i].media_type == 'IMAGE' || posts[i].media_type == 'CAROUSEL_ALBUM'}
         <div class="post">
           <a href={posts[i].permalink}> <img src={posts[i].media_url} /> </a>

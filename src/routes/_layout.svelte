@@ -2,10 +2,19 @@
   import Navbar from "../components/navbar.svelte";
 
   export let segment;
+
+  let width;
+  let mobile = false;
+
+  $: if (width < 1100) {
+    mobile = true;
+  } else {
+    mobile = false;
+  }
 </script>
 
 <style>
-  main {
+  div {
     text-align: center;
     padding: 0px;
     max-width: 100%;
@@ -47,14 +56,18 @@
     );
     fbq("init", "348346456445111");
     fbq("track", "PageView");
-  </script><noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=348346456445111&ev=PageView&noscript=1"
-/></noscript>
+  </script><noscript><img
+      height="1"
+      width="1"
+      style="display:none"
+      src="https://www.facebook.com/tr?id=348346456445111&ev=PageView&noscript=1" /></noscript>
   <!-- End Facebook Pixel Code -->
 </svelte:head>
 
-<Navbar {segment}/>
+<svelte:window bind:innerWidth={width} />
 
-<main>
+<Navbar {segment} {mobile} />
+
+<div>
   <slot />
-</main>
+</div>

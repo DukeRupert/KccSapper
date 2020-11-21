@@ -1,6 +1,4 @@
 <script>
-  import Icon from "svelte-awesome/components/Icon.svelte";
-  import { bars } from "svelte-awesome/icons";
   import DropdownItem from "./dropdownItem.svelte";
   import { dropdownOpen } from "../store";
   import { slide } from "svelte/transition";

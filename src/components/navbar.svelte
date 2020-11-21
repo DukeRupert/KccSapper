@@ -4,15 +4,9 @@
   import Dropdown from "./dropdown.svelte";
 
   export let segment;
+  export let mobile;
 
   let title = "Kagens Coffee & Crepes";
-  let width;
-  let mobile = false;
-  $: if (width < 1100) {
-    mobile = true;
-  } else {
-    mobile = false;
-  }
 </script>
 
 <style>
@@ -31,8 +25,6 @@
     z-index: 101;
   }
 </style>
-
-<svelte:window bind:innerWidth={width} />
 
 {#if mobile}
   <nav>
