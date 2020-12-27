@@ -41,6 +41,12 @@
     <NavItem
       title="Order Online"
       route="https://ordering.chownow.com/order/15130/locations?add_cn_ordering_class=true"
+      emphasize
+      {segment} />
+    <NavItem
+      title="Shop"
+      route="https://shop.kagenandco.com"
+      emphasize
       {segment} />
   </nav>
 {/if}

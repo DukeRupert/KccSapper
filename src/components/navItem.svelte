@@ -2,6 +2,7 @@
   export let title = "";
   export let route;
   export let segment;
+  export let emphasize = false;
 </script>
 
 <style>
@@ -25,12 +26,12 @@
   .emphasize {
     border: 2px var(--secondary) solid;
     border-radius: 40px;
+    margin: 0em 0.5em;
     transition: all 0.2s ease-in-out;
   }
 
   .emphasize:hover {
     background-color: var(--secondary);
-    color: white;
   }
 
   [aria-current] {
@@ -49,7 +50,7 @@
   }
 </style>
 
-<li class={title === 'Order Online' ? 'emphasize' : ''}>
+<li class={emphasize ? 'emphasize' : ''}>
   <a aria-current={segment === route ? 'page' : undefined} href={route}>
     {title}
   </a>

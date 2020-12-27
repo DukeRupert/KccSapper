@@ -68,6 +68,13 @@
         title="ORDER ONLINE"
         route="https://ordering.chownow.com/order/15130/locations?add_cn_ordering_class=true"
         onClick={toggle}
+        emphasize
+        {segment} />
+      <DropdownItem
+        title="SHOP"
+        route="https://shop.kagenandco.com"
+        onClick={toggle}
+        emphasize
         {segment} />
     </div>
   </li>

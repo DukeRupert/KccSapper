@@ -2,6 +2,7 @@
   import { dropdownOpen } from "../store";
   export let title = "";
   export let route;
+  export let emphasize = false;
   export let segment;
 
   function toggle() {
@@ -36,5 +37,5 @@
   aria-current={segment === route ? 'page' : undefined}
   href={route}
   on:click={toggle}>
-  <div class={title === 'ORDER ONLINE' ? 'emphasize' : ''}>{title}</div>
+  <div class={emphasize ? 'emphasize' : ''}>{title}</div>
 </a>
