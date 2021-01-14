@@ -8,9 +8,6 @@ yarn-error.log
 # Local Netlify folder
 .netlify
 
-# Netlify configuration
-netlify.toml
-
 # VS Code local files
 .vscode
 

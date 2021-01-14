@@ -45,7 +45,13 @@
 
   .banner {
     position: relative;
+    margin-top: 40px;
     width: 100%;
+    height: 60vh;
+    background-image: url("/images/espresso.jpg");
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
   }
 
   .banner-text {
@@ -69,6 +75,13 @@
       margin-bottom: 15%;
     }
 
+    .banner {
+      margin-top: 40px;
+      height: 40vh;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+    }
+
     .card {
       min-width: 70vw;
       margin-top: 0;
@@ -85,9 +98,9 @@
 </svelte:head>
 <div>
   <div class="banner">
-    <Image
+    <!-- <Image
       src="images/espresso.jpg"
-      alt="A black and white picture of a steaming espresso machine." />
+      alt="A black and white picture of a steaming espresso machine." /> -->
     <h1 class="banner-text">LOCATIONS</h1>
   </div>
   <div class="cards">
