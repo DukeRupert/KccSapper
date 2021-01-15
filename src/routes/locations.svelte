@@ -45,7 +45,7 @@
         alt="915 E Hawthorne Rd, Spokane WA 99218"
         title="SPOKANE KAGENS"
         address={spokane}
-        phone="509-851-7186"
+        phone="509-413-1363"
         hours="Sunday – Saturday: 5am to 7pm"
       />
     </div>
