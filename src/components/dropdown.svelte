@@ -15,6 +15,65 @@
   }
 </script>
 
+<!-- <button on:click={toggle}><Icon data={bars} scale='2'/></button> -->
+<button
+  on:click={toggle}
+  class="hamburger hamburger--spin {active ? 'is-active' : ''}"
+  type="button">
+  <span class="hamburger-box"> <span class="hamburger-inner" /> </span>
+</button>
+{#if active}
+  <li>
+    <div transition:slide={{ duration: 500, easing: quadOut }}>
+      <DropdownItem
+        title="TRI-CITIES MENU"
+        route="menu"
+        onClick={toggle}
+        {segment}
+      />
+      <DropdownItem
+        title="SPOKANE MENU"
+        route="spokane-menu"
+        onClick={toggle}
+        {segment}
+      />
+      <DropdownItem
+        title="LOCATIONS"
+        route="locations"
+        onClick={toggle}
+        {segment}
+      />
+      <DropdownItem title="ABOUT US" route="about" onClick={toggle} {segment} />
+      <DropdownItem
+        title="JOIN OUR TEAM"
+        route="join-our-team"
+        onClick={toggle}
+        {segment}
+      />
+      <DropdownItem
+        title="CONTACT US"
+        route="feedback"
+        onClick={toggle}
+        {segment}
+      />
+      <DropdownItem
+        title="ORDER ONLINE"
+        route="https://ordering.chownow.com/order/15130/locations?add_cn_ordering_class=true"
+        onClick={toggle}
+        emphasize
+        {segment}
+      />
+      <DropdownItem
+        title="SHOP"
+        route="https://shop.kagenandco.com"
+        onClick={toggle}
+        emphasize
+        {segment}
+      />
+    </div>
+  </li>
+{/if}
+
 <style>
   li {
     display: flex;
@@ -36,46 +95,3 @@
     background-color: var(--nav-dropdown-background);
   }
 </style>
-
-<!-- <button on:click={toggle}><Icon data={bars} scale='2'/></button> -->
-<button
-  on:click={toggle}
-  class="hamburger hamburger--spin {active ? 'is-active' : ''}"
-  type="button">
-  <span class="hamburger-box"> <span class="hamburger-inner" /> </span>
-</button>
-{#if active}
-  <li>
-    <div transition:slide={{ duration: 500, easing: quadOut }}>
-      <DropdownItem title="MENU" route="menu" onClick={toggle} {segment} />
-      <DropdownItem
-        title="LOCATIONS"
-        route="locations"
-        onClick={toggle}
-        {segment} />
-      <DropdownItem title="ABOUT US" route="about" onClick={toggle} {segment} />
-      <DropdownItem
-        title="JOIN OUR TEAM"
-        route="join-our-team"
-        onClick={toggle}
-        {segment} />
-      <DropdownItem
-        title="CONTACT US"
-        route="feedback"
-        onClick={toggle}
-        {segment} />
-      <DropdownItem
-        title="ORDER ONLINE"
-        route="https://ordering.chownow.com/order/15130/locations?add_cn_ordering_class=true"
-        onClick={toggle}
-        emphasize
-        {segment} />
-      <DropdownItem
-        title="SHOP"
-        route="https://shop.kagenandco.com"
-        onClick={toggle}
-        emphasize
-        {segment} />
-    </div>
-  </li>
-{/if}
