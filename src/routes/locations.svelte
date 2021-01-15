@@ -1,10 +1,56 @@
 <script>
-  import Map from "../components/map.svelte";
   import MapCard from "../components/mapCard.svelte";
   let uptown = "270 Williams Boulevard <br /> Richland, WA 99354";
   let pnnl = "640 Horn Rapids <br /> Richland, WA 99354";
-  import Image from "svelte-image";
+  let spokane = "915 E Hawthorne Rd <br /> Spokane, WA 99218";
 </script>
+
+<svelte:head>
+  <title>Locations</title>
+</svelte:head>
+<div>
+  <div class="banner">
+    <!-- <Image
+      src="images/espresso.jpg"
+      alt="A black and white picture of a steaming espresso machine." /> -->
+    <h1 class="banner-text">LOCATIONS</h1>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <MapCard
+        link="https://www.google.com/maps/place/270+Williams+Blvd,+Richland,+WA+99354/"
+        image="https://maps.googleapis.com/maps/api/staticmap?markers=270+Williams+Blvd,+Richland,+WA+99354&zoom=18&scale=false&size=500x500&maptype=roadmap&key=AIzaSyDHsJtQBjSzsLPwckAWjEPymWqY-zZtFOw&map_id=cef788b41fcab785"
+        alt="Google Map of 270 Williams Blvd, Richland, WA 99354"
+        title="UPTOWN KAGENS"
+        address={uptown}
+        phone="509-851-7186"
+        hours="Monday – Sunday: 7am to 2pm"
+      />
+    </div>
+    <div class="card">
+      <MapCard
+        link="https://www.google.com/maps/place/640+Horn+Rapids+Rd,+Richland,+WA+99354/"
+        image="https://maps.googleapis.com/maps/api/staticmap?markers=640+Horn+Rapids+Rd,+Richland,+WA+99354&zoom=16&scale=false&size=500x500&maptype=roadmap&key=AIzaSyDHsJtQBjSzsLPwckAWjEPymWqY-zZtFOw&map_id=d6fafe2bc3c4597b"
+        alt="Google Map of 640 Horn Rapids, Richland, WA 99354"
+        title="PNNL KAGENS"
+        address={pnnl}
+        phone="509-851-7186"
+        hours="Monday – Friday: 7am to 2pm"
+      />
+    </div>
+    <div class="card">
+      <MapCard
+        link="https://www.google.com/maps/place/915+E+Hawthorne+Rd,+Spokane,+WA+99218/"
+        image="https://maps.googleapis.com/maps/api/staticmap?markers=915+E+Hawthorne+Rd,+Spokane,+WA+99218&zoom=18&scale=false&size=500x500&maptype=roadmap&key=AIzaSyDHsJtQBjSzsLPwckAWjEPymWqY-zZtFOw&map_id=cef788b41fcab785"
+        alt="915 E Hawthorne Rd, Spokane WA 99218"
+        title="SPOKANE KAGENS"
+        address={spokane}
+        phone="509-851-7186"
+        hours="Sunday – Saturday: 5am to 7pm"
+      />
+    </div>
+  </div>
+</div>
 
 <style>
   div {
@@ -92,37 +138,3 @@
     }
   }
 </style>
-
-<svelte:head>
-  <title>Locations</title>
-</svelte:head>
-<div>
-  <div class="banner">
-    <!-- <Image
-      src="images/espresso.jpg"
-      alt="A black and white picture of a steaming espresso machine." /> -->
-    <h1 class="banner-text">LOCATIONS</h1>
-  </div>
-  <div class="cards">
-    <div class="card">
-      <MapCard
-        link="https://www.google.com/maps/place/270+Williams+Blvd,+Richland,+WA+99354/"
-        image="https://maps.googleapis.com/maps/api/staticmap?markers=270+Williams+Blvd,+Richland,+WA+99354&zoom=18&scale=false&size=500x500&maptype=roadmap&key=AIzaSyDHsJtQBjSzsLPwckAWjEPymWqY-zZtFOw&map_id=cef788b41fcab785"
-        alt="Google Map of 270 Williams Blvd, Richland, WA 99354"
-        title="UPTOWN KAGENS"
-        address={uptown}
-        phone="509-851-7186"
-        hours="Monday – Sunday: 7am to 2pm" />
-    </div>
-    <div class="card">
-      <MapCard
-        link="https://www.google.com/maps/place/640+Horn+Rapids+Rd,+Richland,+WA+99354/"
-        image="https://maps.googleapis.com/maps/api/staticmap?markers=640+Horn+Rapids+Rd,+Richland,+WA+99354&zoom=16&scale=false&size=500x500&maptype=roadmap&key=AIzaSyDHsJtQBjSzsLPwckAWjEPymWqY-zZtFOw&map_id=d6fafe2bc3c4597b"
-        alt="Google Map of 640 Horn Rapids, Richland, WA 99354"
-        title="PNNL KAGENS"
-        address={pnnl}
-        phone="509-851-7186"
-        hours="Monday – Friday: 7am to 2pm" />
-    </div>
-  </div>
-</div>
