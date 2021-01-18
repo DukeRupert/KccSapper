@@ -9,6 +9,34 @@
   let title = "Kagens Coffee & Crepes";
 </script>
 
+{#if mobile}
+  <nav>
+    <Logo {title} />
+    <Dropdown {segment} />
+  </nav>
+{:else}
+  <nav>
+    <Logo {title} />
+    <NavItem title="Tri-Cities Menu" route="menu" {segment} />
+    <NavItem title="Spokane Menu" route="spokane-menu" {segment} />
+    <NavItem title="Locations" route="locations" {segment} />
+    <NavItem title="About Us" route="about" {segment} />
+    <NavItem title="Join Our Team" route="join-our-team" {segment} />
+    <NavItem
+      title="Order Online"
+      route="https://ordering.chownow.com/order/15130/locations?add_cn_ordering_class=true"
+      emphasize
+      {segment}
+    />
+    <NavItem
+      title="Shop"
+      route="https://shop.kagenandco.com"
+      emphasize
+      {segment}
+    />
+  </nav>
+{/if}
+
 <style>
   nav {
     position: fixed;
@@ -25,28 +53,3 @@
     z-index: 101;
   }
 </style>
-
-{#if mobile}
-  <nav>
-    <Logo {title} />
-    <Dropdown {segment} />
-  </nav>
-{:else}
-  <nav>
-    <Logo {title} />
-    <NavItem title="Menu" route="menu" {segment} />
-    <NavItem title="Locations" route="locations" {segment} />
-    <NavItem title="About Us" route="about" {segment} />
-    <NavItem title="Join Our Team" route="join-our-team" {segment} />
-    <NavItem
-      title="Order Online"
-      route="https://ordering.chownow.com/order/15130/locations?add_cn_ordering_class=true"
-      emphasize
-      {segment} />
-    <NavItem
-      title="Shop"
-      route="https://shop.kagenandco.com"
-      emphasize
-      {segment} />
-  </nav>
-{/if}
