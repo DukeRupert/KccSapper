@@ -5,7 +5,9 @@
 {#each items as item}
   <div>
     <h1>{item.title}</h1>
-    <p>{item.price}</p>
+    {#each Object.entries(item.price) as [size, price]}
+      <p>{size}oz ${price}</p>
+    {/each}
   </div>
 {/each}
 
