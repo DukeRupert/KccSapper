@@ -19,7 +19,8 @@
 <button
   on:click={toggle}
   class="hamburger hamburger--spin {active ? 'is-active' : ''}"
-  type="button">
+  type="button"
+>
   <span class="hamburger-box"> <span class="hamburger-inner" /> </span>
 </button>
 {#if active}
@@ -33,7 +34,7 @@
       />
       <DropdownItem
         title="SPOKANE MENU"
-        route="spokane-menu"
+        route="menu-spokane"
         onClick={toggle}
         {segment}
       />
