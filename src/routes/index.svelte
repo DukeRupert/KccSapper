@@ -14,6 +14,27 @@
   }
 </script>
 
+<svelte:window bind:innerWidth={width} />
+
+<main>
+  <BannerOrder
+    label="ORDER ONLINE"
+    route="https://ordering.chownow.com/order/15130/locations?add_cn_ordering_class=true"
+    right
+  />
+  <BannerLocations label="LOCATIONS" route="/locations" left />
+  <BannerMenu label="MENU" route="/menu" right />
+  <Footer />
+  {#if mobile}
+    <Instagram />
+  {/if}
+  <!-- a naive and simple way to hide a div -->
+  <div class="housekeeping">
+    <a href="/spokane-menu">spokane-menu</a>
+  </div>
+  <!-- end of silly div -->
+</main>
+
 <style>
   main {
     text-align: center;
@@ -27,19 +48,9 @@
     justify-content: center;
     background-color: black;
   }
+  .housekeeping {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+  }
 </style>
-
-<svelte:window bind:innerWidth={width} />
-
-<main>
-  <BannerOrder
-    label="ORDER ONLINE"
-    route="https://ordering.chownow.com/order/15130/locations?add_cn_ordering_class=true"
-    right />
-  <BannerLocations label="LOCATIONS" route="/locations" left />
-  <BannerMenu label="MENU" route="/menu" right />
-  <Footer />
-  {#if mobile}
-    <Instagram />
-  {/if}
-</main>

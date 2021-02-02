@@ -18,7 +18,7 @@
   <nav>
     <Logo {title} />
     <NavItem title="Tri-Cities Menu" route="menu" {segment} />
-    <NavItem title="Spokane Menu" route="spokane-menu" {segment} />
+    <NavItem title="Spokane Menu" route="menu-spokane" {segment} />
     <NavItem title="Locations" route="locations" {segment} />
     <NavItem title="About Us" route="about" {segment} />
     <NavItem title="Join Our Team" route="join-our-team" {segment} />

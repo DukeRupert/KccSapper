@@ -1,14 +1,12 @@
 <script>
   import NavItem from "./navItem.svelte";
-  export let segment;
 </script>
 
 <nav>
-  <NavItem title="Sweet" route="/menu#sweet" />
-  <NavItem title="Savory" route="/menu#savory" />
-  <NavItem title="Coffee" route="/menu#coffee" />
-  <NavItem title="Drinks" route="/menu#drinks" />
-  <NavItem title="21+" route="/menu#adult" />
+  <NavItem title="Sweet" route="/menu-spokane#sweet" />
+  <NavItem title="Savory" route="/menu-spokane#savory" />
+  <NavItem title="Coffee" route="/menu-spokane#coffee" />
+  <NavItem title="Drinks" route="/menu-spokane#drinks" />
 </nav>
 
 <style>
