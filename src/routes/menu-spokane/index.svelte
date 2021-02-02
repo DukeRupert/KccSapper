@@ -88,7 +88,7 @@
     title: "The Chicken",
     ingredients: ["chicken", "spinach", "provolone", "eggs", "dairy", "flour"],
     price: {
-      full: "7.00",
+      full: "11.95",
       mini: "8.50",
     }, // nutrition: ['Sugar 4g', 'Fat 2g']
   };
@@ -108,7 +108,7 @@
       "flour",
     ],
     price: {
-      full: "7.00",
+      full: "11.95",
       mini: "8.50",
     }, // nutrition: ['Sugar 4g', 'Fat 2g']
   };
