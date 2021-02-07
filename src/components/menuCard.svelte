@@ -5,7 +5,6 @@
   export let alt = "";
   export let title = "";
   export let ingredients = ["Coming soon"];
-  export let nutrition = ["Coming soon"];
   export let price = {};
 
   // controls for ingredients dropdown list
@@ -13,13 +12,6 @@
   $: iStatus = ingredientsToggle; // reactive toggle to update caret orientation
   function toggleIngredients() {
     ingredientsToggle = !ingredientsToggle;
-  }
-
-  // controls for nutrition dropdown list
-  let nutritionToggle = false;
-  $: nStatus = nutritionToggle; // reactive toggle to update caret orientation
-  function toggleNutrition() {
-    nutritionToggle = !nutritionToggle;
   }
 
   //imports for fontawesome caret symbols used in dropdown menu
@@ -52,20 +44,6 @@
   <p transition:slide>
     {#each ingredients as ingredient}
       {ingredient} <br />
-    {/each}
-  </p>
-{/if}
-<button on:click={toggleNutrition}
-  >NUTRITIONAL INFO <Fa
-    class="icon"
-    icon={nStatus ? faCaretUp : faCaretDown}
-    primaryColor="darkgrey"
-  /></button
->
-{#if nutritionToggle}
-  <p transition:slide>
-    {#each nutrition as fact}
-      {fact} <br />
     {/each}
   </p>
 {/if}
