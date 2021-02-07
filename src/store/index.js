@@ -211,6 +211,86 @@ const crepes = {
   },
 };
 
+// Data for all Coffees
+const coffeesData = [
+  {
+    title: "Drip Coffee",
+    price: {
+      12: "2.00",
+      16: "2.25",
+      20: "2.50",
+    },
+  },
+  {
+    title: "Americano",
+    price: {
+      12: "3.25",
+      16: "3.75",
+      20: "4.25",
+    },
+  },
+  {
+    title: "Latte",
+    price: {
+      12: "4.00",
+      16: "4.50",
+      20: "5.00",
+    },
+  },
+  {
+    title: "Mocha",
+    price: {
+      12: "4.50",
+      16: "5.00",
+      20: "5.50",
+    },
+  },
+  {
+    title: "Chai Tea Latte",
+    price: {
+      12: "4.50",
+      16: "5.00",
+      20: "5.50",
+    },
+  },
+  {
+    title: "Hot Chocolate",
+    price: {
+      12: "3.25",
+      16: "3.75",
+      20: "425",
+    },
+  },
+  {
+    title: "Blended Drinks",
+    price: {
+      12: "4.50",
+      16: "5.00",
+      20: "5.50",
+    },
+  },
+];
+
+// Data for all Drinks
+const drinksData = [
+  {
+    title: "Bottled Coke",
+    price: "$2.00",
+  },
+  {
+    title: "Mineral Water",
+    price: "$2.00",
+  },
+  {
+    title: "Redbull",
+    price: "$2.00",
+  },
+  {
+    title: "Italian Soda 12oz",
+    price: "$5.00",
+  },
+];
+
 // Object containing all sweet crepes for export
 const sweetCrepesData = [
   crepes.theLemon,
@@ -243,4 +323,16 @@ export const sweetCrepes = readable(sweetCrepesData, () => {
 export const savoryCrepes = readable(savoryCrepesData, () => {
   console.log("got a subscriber to savory crepes");
   return () => console.log("no more subscribers to savory crepes");
+});
+
+// Export Coffees
+export const coffees = readable(coffeesData, () => {
+  console.log("got a subscriber to coffees");
+  return () => console.log("no more subscribers to coffees");
+});
+
+// Export Drinks
+export const drinks = readable(drinksData, () => {
+  console.log("got a subscriber to drinks");
+  return () => console.log("no more subscribers to drinks");
 });
