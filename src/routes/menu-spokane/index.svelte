@@ -3,85 +3,7 @@
   import MenuItem from "../../components/menuItem.svelte";
   import CoffeeItem from "../../components/coffeeItem.svelte";
 
-  import { sweetCrepes, savoryCrepes } from "../../store";
-
-  const coffees = [
-    {
-      title: "Drip Coffee",
-      price: {
-        12: "2.00",
-        16: "2.25",
-        20: "2.50",
-      },
-    },
-    {
-      title: "Americano",
-      price: {
-        12: "3.25",
-        16: "3.75",
-        20: "4.25",
-      },
-    },
-    {
-      title: "Latte",
-      price: {
-        12: "4.00",
-        16: "4.50",
-        20: "5.00",
-      },
-    },
-    {
-      title: "Mocha",
-      price: {
-        12: "4.50",
-        16: "5.00",
-        20: "5.50",
-      },
-    },
-    {
-      title: "Chai Tea Latte",
-      price: {
-        12: "4.50",
-        16: "5.00",
-        20: "5.50",
-      },
-    },
-    {
-      title: "Hot Chocolate",
-      price: {
-        12: "3.25",
-        16: "3.75",
-        20: "425",
-      },
-    },
-    {
-      title: "Blended Drinks",
-      price: {
-        12: "4.50",
-        16: "5.00",
-        20: "5.50",
-      },
-    },
-  ];
-
-  const drinks = [
-    {
-      title: "Bottled Coke",
-      price: "$2.00",
-    },
-    {
-      title: "Mineral Water",
-      price: "$2.00",
-    },
-    {
-      title: "Redbull",
-      price: "$2.00",
-    },
-    {
-      title: "Italian Soda 12oz",
-      price: "$5.00",
-    },
-  ];
+  import { sweetCrepes, savoryCrepes, coffees, drinks } from "../../store";
 </script>
 
 <svelte:head>
@@ -113,14 +35,14 @@
 <a class="anchor" id="coffee" />
 <div class="wrapper">
   <img class="banner" src="/images/coffee.png" alt="sweet" />
-  <CoffeeItem items={coffees} />
+  <CoffeeItem items={$coffees} />
 </div>
 
 <!-- Drinks -->
 <a class="anchor" id="drinks" />
 <div class="wrapper">
   <img class="banner" src="/images/drinks.png" alt="sweet" />
-  <MenuItem items={drinks} />
+  <MenuItem items={$drinks} />
 </div>
 
 <style>
