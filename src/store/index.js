@@ -305,7 +305,6 @@ const savoryCrepesData = [
   crepes.theEgg,
   crepes.theBreakfastInBed,
   crepes.theAllAmerican,
-  crepes.theCaprese,
   crepes.theChicken,
   crepes.theChipotleChicken,
   crepes.theTurkeyBacon,
