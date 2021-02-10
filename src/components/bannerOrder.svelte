@@ -1,10 +1,22 @@
 <script>
-  export let label = '';
-  export let route = '';
+  export let label = "";
+  export let route = "";
   export let left = false;
   export let right = false;
   import Image from "svelte-image";
 </script>
+
+<div>
+  <Image
+    src="images/crepe_strawberry.jpg"
+    alt="A strawberry crepe."
+    class="banner"
+    wrapperClass="banner"
+    placeholderClass="banner"
+  />
+  <!-- Button to trigger modal on index page -->
+  <button class:left class:right id="myBtn">{label}</button>
+</div>
 
 <style>
   div {
@@ -27,7 +39,7 @@
     right: 20%;
     height: calc(var(--nav-size) * 0.6);
     width: auto;
-    padding: 5px;
+    padding: 1em;
     padding-right: 2rem;
     padding-left: 2rem;
     border: 4px solid white;
@@ -69,7 +81,6 @@
   }
 
   @media (max-width: 655px) {
-
     .right {
       right: 5%;
       min-width: 30%;
@@ -91,16 +102,3 @@
     }
   }
 </style>
-
-<div>
-  <Image 
-    src='images/crepe_strawberry.jpg' 
-    alt='A strawberry crepe.' 
-    class="banner" 
-    wrapperClass="banner" 
-    placeholderClass="banner"
-  />
-  <a class:left class:right href={route}>
-    <p>{label}</p>
-  </a>
-</div>
