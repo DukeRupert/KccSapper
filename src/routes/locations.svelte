@@ -1,11 +1,12 @@
 <script>
   import MapCard from "../components/mapCard.svelte";
 
+  const token = process.env.GOOGLE_MAPS_API;
+
   const uptownLocation = {
     link:
       "https://www.google.com/maps/place/270+Williams+Blvd,+Richland,+WA+99354/",
-    image:
-      "https://maps.googleapis.com/maps/api/staticmap?markers=270+Williams+Blvd,+Richland,+WA+99354&zoom=18&scale=false&size=500x500&maptype=roadmap&key=AIzaSyDHsJtQBjSzsLPwckAWjEPymWqY-zZtFOw&map_id=cef788b41fcab785",
+    image: `https://maps.googleapis.com/maps/api/staticmap?markers=270+Williams+Blvd,+Richland,+WA+99354&zoom=18&scale=false&size=500x500&maptype=roadmap&key=${token}`,
     alt: "Google Map of 270 Williams Blvd, Richland, WA 99354",
     title: "UPTOWN KAGENS",
     address: "270 Williams Boulevard <br /> Richland, WA 99354",
@@ -16,8 +17,7 @@
   const pnnlLocation = {
     link:
       "https://www.google.com/maps/place/640+Horn+Rapids+Rd,+Richland,+WA+99354/",
-    image:
-      "https://maps.googleapis.com/maps/api/staticmap?markers=640+Horn+Rapids+Rd,+Richland,+WA+99354&zoom=16&scale=false&size=500x500&maptype=roadmap&key=AIzaSyDHsJtQBjSzsLPwckAWjEPymWqY-zZtFOw&map_id=d6fafe2bc3c4597b",
+    image: `https://maps.googleapis.com/maps/api/staticmap?markers=640+Horn+Rapids+Rd,+Richland,+WA+99354&zoom=16&scale=false&size=500x500&maptype=roadmap&key=${token}`,
     alt: "Google Map of 640 Horn Rapids, Richland, WA 99354",
     title: "PNNL KAGENS",
     address: "640 Horn Rapids <br /> Richland, WA 99354",
@@ -28,8 +28,7 @@
   const spokaneLocation = {
     link:
       "https://www.google.com/maps/place/915+E+Hawthorne+Rd,+Spokane,+WA+99218/",
-    image:
-      "https://maps.googleapis.com/maps/api/staticmap?markers=915+E+Hawthorne+Rd,+Spokane,+WA+99218&zoom=18&scale=false&size=500x500&maptype=roadmap&key=AIzaSyDHsJtQBjSzsLPwckAWjEPymWqY-zZtFOw&map_id=cef788b41fcab785",
+    image: `https://maps.googleapis.com/maps/api/staticmap?markers=915+E+Hawthorne+Rd,+Spokane,+WA+99218&zoom=18&scale=false&size=500x500&maptype=roadmap&key=${token}`,
     alt: "915 E Hawthorne Rd, Spokane WA 99218",
     title: "SPOKANE KAGENS",
     address: "915 E Hawthorne Rd <br /> Spokane, WA 99218",
