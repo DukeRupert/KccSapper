@@ -10,14 +10,25 @@
 </a>
 
 <style>
-  div {
-    position: relative;
-    width: 100%;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(var(--nav-size) * 0.6);
+    width: 60%;
+    max-width: 40%;
+    margin: 40px auto;
+    padding: 1em 2em;
+    border-radius: 40px;
+    color: black;
+    font-size: 24px;
+    background-color: var(--secondary);
+    transition: all calc(var(--speed) * 0.2) ease-in;
   }
 
-  :global(.banner) {
-    display: block;
-    max-width: 100%;
+  a:active {
+    background-color: var(--primary);
+    color: var(--secondary);
   }
 
   .right {
