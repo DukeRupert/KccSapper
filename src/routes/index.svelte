@@ -23,9 +23,9 @@
   <BannerLocations label="LOCATIONS" route="/locations" left />
   <BannerMenu label="MENU" route="/menu" right />
   <Footer />
-  <!-- {#if mobile}
+  {#if mobile}
     <Instagram />
-  {/if} -->
+  {/if}
   <!-- a naive and simple way to hide a div -->
   <div class="housekeeping">
     <a href="/spokane-menu">spokane-menu</a>
