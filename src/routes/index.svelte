@@ -26,7 +26,7 @@
 
     // When the user clicks on the button, open the modal
     btn.onclick = function () {
-      modal.style.display = "block";
+      modal.style.display = "flex";
     };
 
     // When the user clicks on <span> (x), close the modal
@@ -49,14 +49,11 @@
   <BannerOrder label="ORDER ONLINE" right />
   <BannerLocations label="LOCATIONS" route="/locations" left />
   <BannerMenu label="MENU" route="/menu" right />
-  <!-- Trigger/Open The Modal -->
-  <!-- <button id="myBtn">Open Modal</button> -->
-  <!-- The Modal -->
   <div id="myModal" class="modal">
     <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
-      <p>Some text in the Modal..</p>
+      <h1>Please select your location</h1>
     </div>
   </div>
   <Footer />
@@ -92,12 +89,12 @@
   .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 101; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    /* Enable scroll if needed */
     background-color: rgb(0, 0, 0); /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
   }
@@ -105,10 +102,10 @@
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
+    margin: 40% auto; /* 40% from the top and centered */
+    padding: 1.5em;
     width: 80%; /* Could be more or less, depending on screen size */
+    box-sizing: border-box;
   }
 
   /* The Close Button */
@@ -124,5 +121,11 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  @media (min-width: 1100px) {
+    .modal-content {
+      margin: 10% auto; /* 10% from the top and centered*/
+    }
   }
 </style>

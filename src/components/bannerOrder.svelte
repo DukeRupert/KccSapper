@@ -1,6 +1,5 @@
 <script>
   export let label = "";
-  export let route = "";
   export let left = false;
   export let right = false;
   import Image from "svelte-image";
