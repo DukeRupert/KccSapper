@@ -4,6 +4,7 @@
   import BannerOrder from "../components/bannerOrder.svelte";
   import Instagram from "../components/instagram.svelte";
   import Footer from "../components/footer.svelte";
+  import Link from "../components/link.svelte";
   import { onMount } from "svelte";
 
   let width;
@@ -54,6 +55,14 @@
     <div class="modal-content">
       <span class="close">&times;</span>
       <h1>Select your location</h1>
+      <Link
+        label="Tri-Cities"
+        route="https://ordering.chownow.com/order/15130/locations?add_cn_ordering_class=true"
+      />
+      <Link
+        label="Spokane"
+        route="https://www.toasttab.com/kagen-coffee-crepes-spokane-915-e-hawthorne-rd/v3"
+      />
     </div>
   </div>
   <Footer />
