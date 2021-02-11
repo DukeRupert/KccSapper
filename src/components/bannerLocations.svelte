@@ -1,6 +1,11 @@
 <script>
   import Image from "svelte-image";
   import Link from "./link.svelte";
+
+  export let label = "Fix Me";
+  export let route = "#";
+  export let left = false;
+  export let right = false;
 </script>
 
 <div>
@@ -11,7 +16,7 @@
     wrapperClass="banner"
     placeholderClass="banner"
   />
-  <Link {...$$props} />
+  <Link {label} {route} {left} {right} />
 </div>
 
 <style>
