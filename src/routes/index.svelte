@@ -53,7 +53,7 @@
     <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h1>Please select your location</h1>
+      <h1>Select your location</h1>
     </div>
   </div>
   <Footer />

@@ -1,18 +1,13 @@
 <script>
-  import Image from "svelte-image";
-  import Link from "./link.svelte";
+  export let label = "Fix Me";
+  export let route = "#";
+  export let left = false;
+  export let right = false;
 </script>
 
-<div>
-  <Image
-    src="images/latte_large.jpg"
-    alt="A latte"
-    class="banner"
-    wrapperClass="banner"
-    placeholderClass="banner"
-  />
-  <Link {...$$props} />
-</div>
+<a class:left class:right href={route}>
+  <p>{label}</p>
+</a>
 
 <style>
   div {

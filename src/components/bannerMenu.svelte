@@ -1,10 +1,18 @@
 <script>
-  export let label = '';
-  export let route = '';
-  export let left = false;
-  export let right = false;
   import Image from "svelte-image";
+  import Link from "./link.svelte";
 </script>
+
+<div>
+  <Image
+    src="images/crepe_ham.jpg"
+    alt="A ham and cheese crepe."
+    class="banner"
+    wrapperClass="banner"
+    placeholderClass="banner"
+  />
+  <Link {...$$props} />
+</div>
 
 <style>
   div {
@@ -68,7 +76,6 @@
   }
 
   @media (max-width: 655px) {
-
     .right {
       right: 5%;
       min-width: 30%;
@@ -90,16 +97,3 @@
     }
   }
 </style>
-
-<div>
-  <Image 
-    src='images/crepe_ham.jpg' 
-    alt='A ham and cheese crepe.' 
-    class="banner" 
-    wrapperClass="banner" 
-    placeholderClass="banner"
-  />
-  <a class:left class:right href={route}>
-    <p>{label}</p>
-  </a>
-</div>
