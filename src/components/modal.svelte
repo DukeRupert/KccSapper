@@ -68,6 +68,7 @@
     margin: 40% auto; /* 40% from the top and centered */
     padding: 1.5em;
     width: 80%; /* Could be more or less, depending on screen size */
+    text-align: center;
     box-sizing: border-box;
     border-radius: 4px;
     box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),

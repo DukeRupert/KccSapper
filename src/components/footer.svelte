@@ -3,6 +3,28 @@
   import { facebookOfficial, instagram } from "svelte-awesome/icons";
 </script>
 
+<div>
+  <div class="links">
+    <h4>LINKS</h4>
+    <a href="/feedback"><p>Contact Us</p></a>
+    <a href="/join-our-team"><p>Join Our Team</p></a>
+  </div>
+  <div class="socialMedia">
+    <h4>FOLLOW US</h4>
+    <a href="https://www.facebook.com/kagencoffeeandcrepes/">
+      <Icon data={facebookOfficial} scale="2" style="padding-right: 0.5em;" />
+    </a>
+    <a href="https://www.instagram.com/kagencoffeeandcrepes/">
+      <Icon
+        data={instagram}
+        scale="2"
+        style="padding-left: 0.5em; padding-right: 0.5em;"
+      />
+    </a>
+  </div>
+  <p class="copyright">&copy The Crepe Shop 2020</p>
+</div>
+
 <style>
   div {
     position: relative;
@@ -75,6 +97,7 @@
     div {
       height: 30vw;
       width: 100%;
+      margin-bottom: 1%;
     }
 
     h4 {
@@ -86,24 +109,3 @@
     }
   }
 </style>
-
-<div>
-  <div class="links">
-    <h4>LINKS</h4>
-    <a href="/feedback"><p>Contact Us</p></a>
-    <a href="/join-our-team"><p>Join Our Team</p></a>
-  </div>
-  <div class="socialMedia">
-    <h4>FOLLOW US</h4>
-    <a href="https://www.facebook.com/kagencoffeeandcrepes/">
-      <Icon data={facebookOfficial} scale="2" style="padding-right: 0.5em;" />
-    </a>
-    <a href="https://www.instagram.com/kagencoffeeandcrepes/">
-      <Icon
-        data={instagram}
-        scale="2"
-        style="padding-left: 0.5em; padding-right: 0.5em;" />
-    </a>
-  </div>
-  <p class="copyright">&copy The Crepe Shop 2020</p>
-</div>

@@ -3,6 +3,7 @@
   import { dropdownOpen } from "../store";
   import { slide } from "svelte/transition";
   import { quadOut } from "svelte/easing";
+  import Modal from "./modal.svelte";
 
   export let segment;
 
@@ -24,6 +25,7 @@
   <span class="hamburger-box"> <span class="hamburger-inner" /> </span>
 </button>
 {#if active}
+  <Modal />
   <li>
     <div transition:slide={{ duration: 500, easing: quadOut }}>
       <DropdownItem
@@ -57,13 +59,8 @@
         onClick={toggle}
         {segment}
       />
-      <DropdownItem
-        title="ORDER ONLINE"
-        route="https://ordering.chownow.com/order/15130/locations?add_cn_ordering_class=true"
-        onClick={toggle}
-        emphasize
-        {segment}
-      />
+      <!-- Button to trigger modal on index page -->
+      <button id="myBtn">ORDER ONLINE</button>
       <DropdownItem
         title="SHOP"
         route="https://shop.kagenandco.com"
@@ -75,6 +72,7 @@
   </li>
 {/if}
 
+<!-- <button on:click={toggle}><Icon data={bars} scale='2'/></button> -->
 <style>
   li {
     display: flex;
@@ -94,5 +92,18 @@
     box-shadow: rgba(60, 60, 59, 0.75) 0 10px 12px -10px inset;
 
     background-color: var(--nav-dropdown-background);
+  }
+
+  button {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    padding: 0.5rem;
+    color: var(--nav-dropdown-background);
+    font-size: 24px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 40px;
   }
 </style>

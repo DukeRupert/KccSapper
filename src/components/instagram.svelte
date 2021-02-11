@@ -14,6 +14,30 @@
   }
 </script>
 
+<div>
+  {#await fetchData()}
+    <p>loading</p>
+  {:then posts}
+    {#each { length: 5 } as _, i}
+      {#if posts[i].media_type == "IMAGE" || posts[i].media_type == "CAROUSEL_ALBUM"}
+        <div class="post">
+          <a href={posts[i].permalink}> <img src={posts[i].media_url} /> </a>
+        </div>
+      {:else if posts[i].media_type == "VIDEO"}
+        <div class="post">
+          <a href={posts[i].permalink}>
+            <img src={posts[i].thumbnail_url} />
+          </a>
+        </div>
+      {:else}
+        <div class="failed" />
+      {/if}
+    {/each}
+  {:catch error}
+    <p style="color: red">{error.message}</p>
+  {/await}
+</div>
+
 <style>
   div {
     position: relative;
@@ -27,7 +51,7 @@
   }
 
   .post {
-    padding: 2% 0;
+    padding: 0.5% 0;
   }
 
   img {
@@ -43,27 +67,3 @@
     background-color: black;
   }
 </style>
-
-<div>
-  {#await fetchData()}
-    <p>loading</p>
-  {:then posts}
-    {#each { length: 5 } as _, i}
-      {#if posts[i].media_type == 'IMAGE' || posts[i].media_type == 'CAROUSEL_ALBUM'}
-        <div class="post">
-          <a href={posts[i].permalink}> <img src={posts[i].media_url} /> </a>
-        </div>
-      {:else if posts[i].media_type == 'VIDEO'}
-        <div class="post">
-          <a href={posts[i].permalink}>
-            <img src={posts[i].thumbnail_url} />
-          </a>
-        </div>
-      {:else}
-        <div class="failed" />
-      {/if}
-    {/each}
-  {:catch error}
-    <p style="color: red">{error.message}</p>
-  {/await}
-</div>
