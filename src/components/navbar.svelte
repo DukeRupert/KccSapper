@@ -2,6 +2,7 @@
   import Logo from "./logo.svelte";
   import NavItem from "./navItem.svelte";
   import Dropdown from "./dropdown.svelte";
+  import Modal from "./modal.svelte";
 
   export let segment;
   export let mobile;
@@ -10,11 +11,13 @@
 </script>
 
 {#if mobile}
+  <Modal />
   <nav>
     <Logo {title} />
     <Dropdown {segment} />
   </nav>
 {:else}
+  <Modal />
   <nav>
     <Logo {title} />
     <NavItem title="Tri-Cities Menu" route="menu" {segment} />
@@ -22,12 +25,8 @@
     <NavItem title="Locations" route="locations" {segment} />
     <NavItem title="About Us" route="about" {segment} />
     <NavItem title="Join Our Team" route="join-our-team" {segment} />
-    <NavItem
-      title="Order Online"
-      route="https://ordering.chownow.com/order/15130/locations?add_cn_ordering_class=true"
-      emphasize
-      {segment}
-    />
+    <!-- Button to trigger modal on index page -->
+    <button id="myBtn">Order Online</button>
     <NavItem
       title="Shop"
       route="https://shop.kagenandco.com"
@@ -51,5 +50,22 @@
     justify-content: flex-end;
     box-shadow: rgba(60, 60, 59, 0.75) 0 0 10px;
     z-index: 101;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px var(--secondary) solid;
+    border-radius: 40px;
+    margin: 0em 0.5em;
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: white;
+  }
+
+  button:hover {
+    background-color: var(--secondary);
   }
 </style>

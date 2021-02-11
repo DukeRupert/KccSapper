@@ -65,7 +65,7 @@
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
-    margin: 40% auto; /* 40% from the top and centered */
+    margin: 20% 10% auto; /* 10% from the top, 20% from bottom and centered */
     padding: 1.5em;
     width: 80%; /* Could be more or less, depending on screen size */
     text-align: center;
