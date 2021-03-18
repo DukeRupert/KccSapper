@@ -14,7 +14,7 @@
     placeholderClass="banner"
   />
   <!-- Button to trigger modal on index page -->
-  <button class:left class:right id="myBtn">{label}</button>
+  <button class:left class:right id="myBtn2">{label}</button>
 </div>
 
 <style>

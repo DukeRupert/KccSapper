@@ -6,14 +6,20 @@
     // Get the modal
     var modal = document.getElementById("myModal");
 
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
+    // Get the buttons that opens the modal
+    var btn = document.getElementById("myBtn"); // located in navbar
+    var btn2 = document.getElementById("myBtn2"); // located in bannerOrder
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
 
     // When the user clicks on the button, open the modal
     btn.onclick = function () {
+      modal.style.display = "flex";
+    };
+
+    // When the user clicks on the button, open the modal
+    btn2.onclick = function () {
       modal.style.display = "flex";
     };
 
@@ -38,7 +44,7 @@
     <h1>Select your location</h1>
     <Link
       label="Tri-Cities"
-      route="https://ordering.chownow.com/order/15130/locations?add_cn_ordering_class=true"
+      route="https://www.toasttab.com/kagen-coffee-crepes-270-williams-blvd"
     />
     <Link
       label="Spokane"
