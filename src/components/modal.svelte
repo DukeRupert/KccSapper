@@ -1,46 +1,17 @@
 <script>
   import Link from "../components/link.svelte";
-  import { onMount } from "svelte";
+  import { modal } from "../store";
 
-  onMount(() => {
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the buttons that opens the modal
-    var btn = document.getElementById("myBtn"); // located in navbar
-    var btn2 = document.getElementById("myBtn2"); // located in bannerOrder
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on the button, open the modal
-    btn.onclick = function () {
-      modal.style.display = "flex";
-    };
-
-    // When the user clicks on the button, open the modal
-    btn2.onclick = function () {
-      modal.style.display = "flex";
-    };
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-      modal.style.display = "none";
-    };
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    };
-  });
+  // Function toggles dark mode for document.body and all components listening to dark bool in store
+  function toggleModal() {
+    modal.update((value) => !value); // toggle the value of dark in store
+  }
 </script>
 
-<div id="myModal" class="modal">
+<div id="myModal" class="modal {$modal ? 'open' : ''}">
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close">&times;</span>
+    <span class="close" on:click={toggleModal}>&times;</span>
     <h1>Select your location</h1>
     <Link
       label="Tri-Cities"
@@ -66,6 +37,10 @@
     /* Enable scroll if needed */
     background-color: rgb(0, 0, 0); /* Fallback color */
     background-color: rgba(0, 0, 0, 0.32); /* Black w/ opacity */
+  }
+
+  .open {
+    display: flex;
   }
 
   /* Modal Content/Box */

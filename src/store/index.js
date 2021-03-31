@@ -5,6 +5,8 @@ export const mobile = writable(false);
 
 export const dropdownOpen = writable(false);
 
+export const modal = writable(false);
+
 // Data for all Crepes
 const crepes = {
   theLemon: {

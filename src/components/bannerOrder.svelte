@@ -1,4 +1,11 @@
 <script>
+  import { modal } from "../store";
+
+  // Function toggles dark mode for document.body and all components listening to dark bool in store
+  function toggleModal() {
+    modal.update((value) => !value); // toggle the value of dark in store
+  }
+
   export let label = "";
   export let left = false;
   export let right = false;
@@ -14,7 +21,7 @@
     placeholderClass="banner"
   />
   <!-- Button to trigger modal on index page -->
-  <button class:left class:right id="myBtn2">{label}</button>
+  <button class:left class:right on:click={toggleModal}>{label}</button>
 </div>
 
 <style>

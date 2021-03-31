@@ -5,6 +5,13 @@
   import { quadOut } from "svelte/easing";
   import Modal from "./modal.svelte";
 
+  import { modal } from "../store";
+
+  // Function toggles dark mode for document.body and all components listening to dark bool in store
+  function toggleModal() {
+    modal.update((value) => !value); // toggle the value of dark in store
+  }
+
   export let segment;
 
   //renaming store value to make markup more concise (ie. class:active)
@@ -60,7 +67,7 @@
         {segment}
       />
       <!-- Button to trigger modal on index page -->
-      <button id="myBtn">ORDER ONLINE</button>
+      <button on:click={toggleModal}>ORDER ONLINE</button>
       <DropdownItem
         title="SHOP"
         route="https://shop.kagenandco.com"

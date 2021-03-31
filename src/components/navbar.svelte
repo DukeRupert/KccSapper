@@ -7,6 +7,13 @@
   export let segment;
   export let mobile;
 
+  import { modal } from "../store";
+
+  // Function toggles dark mode for document.body and all components listening to dark bool in store
+  function toggleModal() {
+    modal.update((value) => !value); // toggle the value of dark in store
+  }
+
   let title = "Kagens Coffee & Crepes";
 </script>
 
@@ -26,7 +33,7 @@
     <NavItem title="About Us" route="about" {segment} />
     <NavItem title="Join Our Team" route="join-our-team" {segment} />
     <!-- Button to trigger modal on index page -->
-    <button id="myBtn">Order Online</button>
+    <button on:click={toggleModal}>Order Online</button>
     <NavItem
       title="Shop"
       route="https://shop.kagenandco.com"
