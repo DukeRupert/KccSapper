@@ -9,18 +9,7 @@
     title: "UPTOWN KAGENS",
     address: "270 Williams Boulevard <br /> Richland, WA 99354",
     phone: "509-851-7186",
-    hours: "Monday – Sunday: 7am to 2pm",
-  };
-
-  const pnnlLocation = {
-    link:
-      "https://www.google.com/maps/place/640+Horn+Rapids+Rd,+Richland,+WA+99354/",
-    image: "images/staticmapPNNL.png",
-    alt: "Google Map of 640 Horn Rapids, Richland, WA 99354",
-    title: "PNNL KAGENS",
-    address: "640 Horn Rapids <br /> Richland, WA 99354",
-    phone: "509-851-7186",
-    hours: "Monday – Friday: 7am to 2pm",
+    hours: "Monday – Sunday: 7am to 5pm",
   };
 
   const spokaneLocation = {
@@ -45,9 +34,6 @@
   <div class="cards">
     <div class="card">
       <MapCard {...uptownLocation} />
-    </div>
-    <div class="card">
-      <MapCard {...pnnlLocation} />
     </div>
     <div class="card">
       <MapCard {...spokaneLocation} />
