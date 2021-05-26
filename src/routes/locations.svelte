@@ -2,19 +2,17 @@
   import MapCard from "../components/mapCard.svelte";
 
   const uptownLocation = {
-    link:
-      "https://www.google.com/maps/place/270+Williams+Blvd,+Richland,+WA+99354/",
+    link: "https://www.google.com/maps/place/270+Williams+Blvd,+Richland,+WA+99354/",
     image: "images/staticmapTriCities.png",
     alt: "Google Map of 270 Williams Blvd, Richland, WA 99354",
     title: "UPTOWN KAGENS",
     address: "270 Williams Boulevard <br /> Richland, WA 99354",
     phone: "509-851-7186",
-    hours: "Monday – Sunday: 7am to 5pm",
+    hours: "Sunday – Saturday: 7am to 5pm",
   };
 
   const spokaneLocation = {
-    link:
-      "https://www.google.com/maps/place/915+E+Hawthorne+Rd,+Spokane,+WA+99218/",
+    link: "https://www.google.com/maps/place/915+E+Hawthorne+Rd,+Spokane,+WA+99218/",
     image: "images/staticmapSpokane.png",
     alt: "915 E Hawthorne Rd, Spokane WA 99218",
     title: "SPOKANE KAGENS",
